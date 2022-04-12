@@ -1,0 +1,20 @@
+.nav {
+    margin: 24px 43px 40px auto;
+
+    ul {
+        display: flex;
+        align-items: center;
+
+        li {
+            margin-right: 48px;
+
+            a {
+                color: var(--title-color)
+            }
+        }
+
+        li:last-child {
+            margin-right: 0;
+        }
+    }
+}

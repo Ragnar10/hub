@@ -1,0 +1,27 @@
+.wrapper {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 30px;
+    background-color: var(--header-bgcolor);
+}
+
+.info {
+    display: flex;
+    margin: auto;
+    font-size: var(--secondary-font-size);
+
+    span {
+        display: inline-block;
+        margin-right: 5px;
+        color: var(--primary-color);
+    }
+
+    a {
+        font-weight: 600;
+        color: var(--header-link-color);
+        text-decoration: underline;
+    }
+}
+
+
