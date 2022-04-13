@@ -52,7 +52,7 @@ const OurWorks = () => {
                         images.filter((item) => item.id === activeStep + 1).map((item) => {
                             return (
                                 <div key = { item.id } className = { Styles.carousel_card }>
-                                    <div className = { Styles.card_img }>
+                                    <div className = { Styles.card_img } onClick = { handleNext }>
                                         <img
                                             key = { item.id } src = { item.img }
                                             alt = { 'carousel image' } />
