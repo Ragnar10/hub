@@ -9,8 +9,9 @@ import BasicInfo from '../BasicInfo';
 import Donation from '../Donation';
 import AboutUs from '../AboutUs';
 import AreasExpertise from '../AreasExpertise';
-import Service from "../Service";
-import GetInTouch from "../GetInTouch";
+import Service from '../Service';
+import OurWorks from '../OurWorks';
+import GetInTouch from '../GetInTouch';
 
 const Main = () => {
     return (
@@ -23,6 +24,7 @@ const Main = () => {
                     <Donation />
                     <AboutUs />
                     <AreasExpertise />
+                    <OurWorks />
                     <Service />
                     <GetInTouch />
                 </main>

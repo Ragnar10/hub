@@ -40,7 +40,7 @@ const team = [
 
 const AboutUs = () => {
     return (
-        <section className = { Styles.wrapper }>
+        <section id = { 'aboutus' } className = { Styles.wrapper }>
             <h2 className = { Styles.title }>{ 'Who we are' }</h2>
             <div className = { Styles.descr }>
                 <p>

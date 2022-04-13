@@ -35,7 +35,7 @@ const donations = [
 
 const Donation = () => {
     return (
-        <section className = { Styles.wrapper }>
+        <section id = { 'donate' } className = { Styles.wrapper }>
             <div className = { Styles.pre_title }>
                 <span>{ 'While you’re here,' }</span>
                 <span />
