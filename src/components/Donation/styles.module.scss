@@ -225,7 +225,7 @@
 
 @media (min-width: 320px) and (max-width: 768px) {
     .wrapper {
-        overflow: hidden;
+        margin-bottom: 60px;
     }
 
     .title {
@@ -243,6 +243,7 @@
 
     .donations_wrap {
         padding: 10px;
+        overflow: scroll;
     }
 
     .donations {

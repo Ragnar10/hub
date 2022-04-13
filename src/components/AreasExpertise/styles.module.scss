@@ -112,3 +112,50 @@
         margin-bottom: 10px;
     }
 }
+
+@media (min-width: 320px) and (max-width: 768px) {
+    .title {
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+
+    .descr {
+        font-size: 14px;
+    }
+
+    .expertise {
+        width: max-content;
+    }
+
+    .expertise_wrap {
+        overflow: scroll;
+        padding: 10px;
+    }
+
+    .expertise_card {
+        width: 130px;
+        height: 100px;
+        margin-right: 10px;
+        padding: 0;
+
+        div {
+            width: 40px;
+            height: 40px;
+            margin: 15px 0 6px;
+
+            .card_icon_web,
+            .card_icon_apps,
+            .card_icon_defi,
+            .card_icon_ml,
+            .card_icon_art{
+                background-size: cover;
+            }
+
+            span {
+                width: 18px;
+                height: 18px;
+                background-size: cover;
+            }
+        }
+    }
+}

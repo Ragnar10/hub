@@ -158,8 +158,34 @@ button.btn_contact {
 }
 
 @media (min-width: 320px) and (max-width: 768px) {
+    .wrapper {
+        margin-bottom: 60px;
+    }
+
     .title {
         margin-bottom: 20px;
         font-size: 36px;
+    }
+
+    .descr {
+        p {
+            font-size: 14px;
+        }
+    }
+
+    .team {
+        width: max-content;
+    }
+
+    .team_wrap {
+        overflow: scroll;
+    }
+
+    .team_card {
+        margin-right: 10px;
+    }
+
+    .btn_wrap {
+        text-align: center;
     }
 }

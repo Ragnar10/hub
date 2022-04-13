@@ -50,16 +50,20 @@ const AboutUs = () => {
                     { 'We can both continue contributing to volunteer work in Ukraine and financially support those in need by working on your projects and delivering products. You are guaranteed to receive a high-quality result in a short period of time.' }
                 </p>
             </div>
-            <div className = { Styles.team }>
-                {
-                    team.map((item) => {
-                        return <Card key = { item.id } item = { item } />;
-                    })
-                }
+            <div className = { Styles.team_wrap }>
+                <div className = { Styles.team }>
+                    {
+                        team.map((item) => {
+                            return <Card key = { item.id } item = { item } />;
+                        })
+                    }
+                </div>
             </div>
-            <Button
-                variant = { 'contained' }
-                className = { Styles.btn_contact }>{ 'Contact' }</Button>
+            <div className = { Styles.btn_wrap }>
+                <Button
+                    variant = { 'contained' }
+                    className = { Styles.btn_contact }>{ 'Contact' }</Button>
+            </div>
         </section>
     );
 };
