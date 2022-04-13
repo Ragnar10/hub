@@ -31,10 +31,10 @@ const team = [
         id: 3, name: 'Oleksandr Cheberiak', position: 'Head of R&D_Startup founder,_entrepreneur', descr: 'Our experience has shown that we love to create products that make the world better.', class: Styles.card_avatar_oc,
     },
     {
-        id: 4, name: 'Dmirty Bagow', position: 'Experienced CTO_Project manager,_delivery manager,_product owner', descr: 'Plans are nothing, planning is everything', class: Styles.card_avatar_db,
+        id: 4, name: 'Dmirty Bagow', position: 'Experienced CTO', descr: 'Founder of Defi development specialization company IT startups founder Full stack developer', class: Styles.card_avatar_db,
     },
     {
-        id: 5, name: 'Andrey Paios', position: 'Head of PMO', descr: 'Founder of Defi development specialization company IT startups founder Full stack developer', class: Styles.card_avatar_ap,
+        id: 5, name: 'Andrey Paios', position: 'Head of PMO_Project manager,_delivery manager,_product owner', descr: 'Plans are nothing, planning is everything ', class: Styles.card_avatar_ap,
     },
 ];
 
