@@ -3,16 +3,16 @@ import Styles from './styles.module.scss';
 
 const Card = ({ item }) => {
     return (
-        <div className = { Styles.expertise_card }>
+        <div className = { Styles.services_card }>
             <h4>{ item.title }</h4>
             <ul className = { Styles.content_list }>
-                { item.content.map(listItem => <li>{listItem}</li>) }
+                { item.content.map((listItem, idx) => <li key = { idx }>{ listItem }</li>) }
             </ul>
         </div>
     );
 };
 
-const expertise = [
+const services = [
     {
         id: 1, title: 'Web', content: ['Simple web sites', 'Corporate web sites and company intranets', 'Custom solutions: portals, games, automatization of management.'],
     },
@@ -34,9 +34,9 @@ const Service = () => {
     return (
         <section className = { Styles.wrapper }>
             <h2 className = { Styles.title }>{ 'Service examples' }</h2>
-            <div className = { Styles.expertise }>
+            <div className = { Styles.services }>
                 {
-                    expertise.map((item) => {
+                    services.map((item) => {
                         return <Card key = { item.id } item = { item } />;
                     })
                 }
