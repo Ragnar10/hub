@@ -1,8 +1,43 @@
 .side_nav {
-    width: 272px;
+    position: relative;
+    display: none;
+    flex-direction: column;
+}
+
+.side_nav_shadow,
+.side_nav_shadow_hide {
+    position: absolute;
+    top: 52px;
+    left: -20px;
+    z-index: 9;
+    display: block;
+    min-width: 100vw;
+    min-height: 100vh;
+    background-color: rgba(115, 115, 115, 0.2);
+    pointer-events: none;
+}
+
+.side_nav_shadow_hide {
+    display: none;
+}
+
+.side_nav_burger {
+    width: 24px;
+    height: 24px;
+    background: url('../../theme/assets/icons/burger.svg') no-repeat;
+}
+
+.side_nav_menu,
+.side_nav_menu_open {
+    position: absolute;
+    top: 53px;
+    left: -20px;
+    z-index: 10;
+    display: none;
+    min-width: 272px;
     height: 444px;
     padding: 20px;
-    background: #999999;
+    background-color: var(--main-bgcolor);
 
     a {
         display: inline-block;
@@ -13,10 +48,20 @@
     }
 }
 
+.side_nav_menu_open {
+    display: block;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
 .contacts_phone {
     font-weight: 400;
     font-size: 16px;
-    margin:100px 0 20px;
+    margin: 100px 0 20px;
 
     span:first-child {
         background: url('../../theme/assets/icons/phone.svg') no-repeat;
@@ -32,26 +77,43 @@
     }
 }
 
-.socials_fb {
-    a {
-        background: url('../../theme/assets/icons/facebook.svg') no-repeat;
+.socials {
+    display: flex;
+
+    li {
+        margin-right: 30px;
+
+        a {
+            display: inline-block;
+            width: 33px;
+            height: 33px;
+        }
+    }
+
+    .socials_fb {
+        a {
+            background: url('../../theme/assets/icons/facebook.svg') no-repeat;
+        }
+    }
+
+    .socials_tg {
+        a {
+            background: url('../../theme/assets/icons/telegram.svg') no-repeat;
+        }
+    }
+
+    .socials_in {
+        margin-right: 0;
+
+        a {
+            background: url('../../theme/assets/icons/linkedin.svg') no-repeat;
+        }
     }
 }
 
-.socials_tg {
-    a {
-        background: url('../../theme/assets/icons/telegram.svg') no-repeat;
-    }
-}
-
-.socials_in {
-    margin-right: 0;
-
-    a {
-        background: url('../../theme/assets/icons/linkedin.svg') no-repeat;
-    }
-}
 
 @media (min-width: 320px) and (max-width: 768px) {
-
+    .side_nav {
+        display: flex;
+    }
 }

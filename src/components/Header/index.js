@@ -6,7 +6,7 @@ import Styles from './styles.module.scss';
 import logo from '../../theme/assets/icons/logo.svg';
 // Components
 import Nav from '../Nav';
-import SideNav from "../SideNav";
+import SideNav from '../SideNav';
 
 const Header = () => {
     return (

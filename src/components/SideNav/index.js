@@ -1,47 +1,65 @@
+// Core
+import { useState } from 'react';
 // Styles
 import Styles from './styles.module.scss';
-// Images
-import logo from '../../theme/assets/icons/logo.svg';
 
 const SideNav = () => {
+    const [isOpen, setIsOpen] = useState(false);
+
+    const dropdown = isOpen ? Styles.side_nav_menu_open : Styles.side_nav_menu;
+    const shadow = isOpen ? Styles.side_nav_shadow : Styles.side_nav_shadow_hide;
+
     return (
         <section className = { Styles.side_nav }>
-            <ul>
-                <li>
-                    <a href = { '#aboutus' }>{ 'Who we are' }</a>
-                </li>
-                <li>
-                    <a href = { '#projects' }>{ 'Projects' }</a>
-                </li>
-                <li>
-                    <a href = { '#donate' }>{ 'Donate' }</a>
-                </li>
-                <li>
-                    <a href = { '#contact' }>{ 'Contact' }</a>
-                </li>
-            </ul>
-            <div className = { Styles.footer_contacts }>
-                <div className = { Styles.contacts_phone }>
-                    <span />
-                    <span>{ '380 00 000 00 00' }</span>
+            <div className = { shadow } />
+            <div
+                onClick = { () => setIsOpen(!isOpen) }
+                className = { Styles.side_nav_burger } />
+            <div className = { dropdown }>
+                <ul>
+                    <li>
+                        <a
+                            href = { '#aboutus' }
+                            onClick = { () => setIsOpen(!isOpen) }>{ 'Who we are' }</a>
+                    </li>
+                    <li>
+                        <a
+                            href = { '#projects' }
+                            onClick = { () => setIsOpen(!isOpen) }>{ 'Projects' }</a>
+                    </li>
+                    <li>
+                        <a
+                            href = { '#donate' }
+                            onClick = { () => setIsOpen(!isOpen) }>{ 'Donate' }</a>
+                    </li>
+                    <li>
+                        <a
+                            href = { '#contact' }
+                            onClick = { () => setIsOpen(!isOpen) }>{ 'Contact' }</a>
+                    </li>
+                </ul>
+                <div className = { Styles.contacts }>
+                    <div className = { Styles.contacts_phone }>
+                        <span />
+                        <span>{ '380 00 000 00 00' }</span>
+                    </div>
+                    <div className = { Styles.contacts_email }>
+                        <span />
+                        <span>{ 'example@mail.com' }</span>
+                    </div>
                 </div>
-                <div className = { Styles.contacts_email }>
-                    <span />
-                    <span>{ 'example@mail.com' }</span>
-                </div>
+                <ul className = { Styles.socials }>
+                    <li className = { Styles.socials_fb }>
+                        <a href = { '' } />
+                    </li>
+                    <li className = { Styles.socials_tg }>
+                        <a href = { '' } />
+                    </li>
+                    <li className = { Styles.socials_in }>
+                        <a href = { '' } />
+                    </li>
+                </ul>
             </div>
-            <div className = { Styles.footer_socials }>
-                <div className = { Styles.socials_fb }>
-                    <a href = { '' } />
-                </div>
-                <div className = { Styles.socials_tg }>
-                    <a href = { '' } />
-                </div>
-                <div className = { Styles.socials_in }>
-                    <a href = { '' } />
-                </div>
-            </div>
-
         </section>
     );
 };

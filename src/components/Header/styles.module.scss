@@ -37,6 +37,11 @@ button.header_btn {
     }
 
     .header {
-        justify-content: center;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .header_logo {
+        margin: 0 auto;
     }
 }
