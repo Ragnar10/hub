@@ -6,10 +6,12 @@ import Styles from './styles.module.scss';
 import logo from '../../theme/assets/icons/logo.svg';
 // Components
 import Nav from '../Nav';
+import SideNav from "../SideNav";
 
 const Header = () => {
     return (
         <header className = { Styles.header }>
+            <SideNav />
             <div className = { Styles.header_logo }>
                 <a href = { '' }>
                     <img src = { logo } alt = { 'logo image' } />
