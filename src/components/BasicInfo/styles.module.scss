@@ -172,3 +172,38 @@
         background-size: cover;
     }
 }
+
+@media (min-width: 320px) and (max-width: 768px) {
+    .wrapper {
+        flex-direction: column;
+        height: inherit;
+    }
+
+    .info {
+        width: 100%;
+    }
+
+    .info_emergency {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: inherit;
+        text-align: center;
+    }
+
+    .info_title {
+        margin-bottom: 10px;
+        font-size: 36px;
+        line-height: 42px;
+    }
+
+    .info_form {
+        .form_field {
+            width: 100%;
+        }
+    }
+
+    .bg_img {
+        order: -1;
+    }
+}

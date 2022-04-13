@@ -156,3 +156,10 @@ button.btn_contact {
         margin: 0 auto;
     }
 }
+
+@media (min-width: 320px) and (max-width: 768px) {
+    .title {
+        margin-bottom: 20px;
+        font-size: 36px;
+    }
+}

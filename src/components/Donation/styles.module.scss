@@ -222,3 +222,53 @@
         }
     }
 }
+
+@media (min-width: 320px) and (max-width: 768px) {
+    .wrapper {
+        overflow: hidden;
+    }
+
+    .title {
+        flex-direction: column;
+        align-items: initial;
+
+        h3 {
+            margin-bottom: 10px;
+        }
+
+        div {
+            margin: 0;
+        }
+    }
+
+    .donations_wrap {
+        padding: 10px;
+    }
+
+    .donations {
+        width: max-content;
+        flex-wrap: nowrap;
+    }
+
+    .donations_card {
+        flex-direction: column;
+        height: 148px;
+        width: 280px;
+        margin-bottom: 0;
+        margin-right: 10px;
+    }
+    .card_info {
+        width: 100%;
+
+        div {
+            position: relative;
+            justify-content: center;
+
+            span {
+                position: absolute;
+                right: 0;
+                top: 28px;
+            }
+        }
+    }
+}

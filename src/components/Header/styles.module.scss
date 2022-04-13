@@ -30,3 +30,13 @@ button.header_btn {
         margin-left: 0;
     }
 }
+
+@media (min-width: 320px) and (max-width: 768px) {
+    button.header_btn {
+        display: none;
+    }
+
+    .header {
+        justify-content: center;
+    }
+}
