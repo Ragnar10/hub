@@ -21,3 +21,10 @@
     width: 100%;
     height: calc(100% - 180px);
 }
+
+@media (max-width: 768px) {
+    .wrapper {
+        width: auto;
+        padding: 0 52px;
+    }
+}
