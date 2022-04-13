@@ -79,5 +79,15 @@
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
+    .footer {
+        height: 91px;
+    }
 
+    .footer_socials {
+        display: flex;
+
+        li {
+            margin-right: 30px;
+        }
+    }
 }

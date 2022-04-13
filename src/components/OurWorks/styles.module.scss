@@ -95,6 +95,7 @@ button.stepper_btn_next,
 button.stepper_btn_back {
     position: absolute;
     top: -465px;
+    min-width: 60px;
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -135,5 +136,81 @@ button.stepper_btn_back {
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
+    .wrapper {
+        margin-bottom: 70px;
+    }
 
+    .title {
+        margin-bottom: 20px;
+        font-size: 36px;
+        line-height: 37px;
+    }
+
+    .carousel_wrapper {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: fit-content;
+    }
+
+    .carousel {
+        margin-bottom: 14px;
+        padding: 33px;
+    }
+
+    .carousel_card {
+        display: flex;
+        flex-direction: column;
+        width: 532px;
+        height: fit-content;
+    }
+
+    .card_img {
+        width: 532px;
+        height: 345px;
+        margin-bottom: 10px;
+    }
+
+    .card_info {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: fit-content;
+
+        div {
+            margin-bottom: 6px;
+
+            h3 {
+                font-size: 14px;
+                line-height: 16px;
+            }
+
+            span {
+                font-size: 10px;
+                line-height: 16px;
+            }
+        }
+
+        p {
+            font-size: 10px;
+        }
+    }
+
+    button.stepper_btn_next,
+    button.stepper_btn_back {
+        top: -355px;
+        min-width: 40px;
+        width: 40px;
+        height: 40px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.11);
+    }
+
+    button.stepper_btn_next {
+        right: -20px;
+    }
+
+    button.stepper_btn_back {
+        left: -20px;
+    }
 }

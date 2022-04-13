@@ -127,5 +127,32 @@ button.btn_contact {
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
+    .wrapper {
+        margin-bottom: 70px;
+    }
 
+    .title {
+        margin-bottom: 20px;
+        font-size: 36px;
+        line-height: 37px;
+    }
+
+    .team {
+        overflow: auto;
+        margin-bottom: 20px;
+
+        & > div:first-child {
+            margin-left: 12px;
+        }
+    }
+
+    .team_card {
+        min-width: 170px;
+        margin-right: 12px;
+        margin-bottom: 10px;
+    }
+
+    button.btn_contact {
+        margin: 0 auto;
+    }
 }
