@@ -8,10 +8,12 @@ const SideNav = () => {
 
     const dropdown = isOpen ? Styles.side_nav_menu_open : Styles.side_nav_menu;
     const shadow = isOpen ? Styles.side_nav_shadow : Styles.side_nav_shadow_hide;
+    const { height } = getComputedStyle(document.body);
+    const h = parseFloat(height) - 136;
 
     return (
         <section className = { Styles.side_nav }>
-            <div className = { shadow } />
+            <div className = { shadow } style = { { height: h } } />
             <div
                 onClick = { () => setIsOpen(!isOpen) }
                 className = { Styles.side_nav_burger } />
