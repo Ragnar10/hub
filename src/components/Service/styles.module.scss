@@ -85,3 +85,29 @@
         margin-bottom: 10px;
     }
 }
+
+@media (min-width: 320px) and (max-width: 768px) {
+    .wrapper {
+        margin-bottom: 50px;
+    }
+
+    .title {
+        margin-bottom: 20px;
+        font-size: 36px;
+        line-height: 42px;
+    }
+
+    .services {
+        overflow: auto;
+
+        & > div:first-child {
+            margin-left: 9px;
+        }
+    }
+
+    .services_card {
+        min-width: 170px;
+        margin-right: 9px;
+        margin-bottom: 10px;
+    }
+}
