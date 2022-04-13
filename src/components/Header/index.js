@@ -10,7 +10,7 @@ import Nav from '../Nav';
 const Header = () => {
     return (
         <header className = { Styles.header }>
-            <div className = { Styles.logo }>
+            <div className = { Styles.header_logo }>
                 <a href = { '' }>
                     <img src = { logo } alt = { 'logo image' } />
                 </a>
@@ -18,7 +18,7 @@ const Header = () => {
             <Nav />
             <Button
                 variant = { 'contained' }
-                className = { Styles.btn_contact }>{ 'Contact' }</Button>
+                className = { Styles.header_btn }>{ 'Contact' }</Button>
         </header>
     );
 };

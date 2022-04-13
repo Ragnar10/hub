@@ -1,0 +1,103 @@
+.wrapper {
+    display: flex;
+    width: fit-content;
+    height: 450px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 100%;
+    padding: 70px 0 58px;
+}
+
+.info_emergency {
+    display: flex;
+    width: fit-content;
+    height: 30px;
+    margin-bottom: 16px;
+    padding: 8px 16px;
+    border-radius: 29px;
+    background-color: var(--emergency-bgcolor);
+
+    span:first-child {
+        display: inline-block;
+        width: 16px;
+        height: 14px;
+        margin-right: 8px;
+        background: url('../../theme/assets/icons/emergency.svg') no-repeat;
+    }
+
+    span:last-child {
+        font-size: var(--secondary-font-size);
+        line-height: 14px;
+        color: var(--emergency-color);
+    }
+}
+
+.info_title {
+    margin-bottom: 24px;
+    font-size: var(--title-font-size);
+    line-height: 49px;
+    font-weight: 500;
+    color: var(--title-color);
+}
+
+.info_descr {
+    margin-bottom: 24px;
+    font-size: var(--primary-font-size);
+    line-height: 24px;
+    color: var(--primary-color);
+}
+
+.info_form {
+    display: flex;
+    flex-direction: column;
+
+    div {
+        display: flex;
+        margin-bottom: 8px;
+    }
+
+    .form_field {
+        width: 218px;
+        height: 48px;
+        padding: 16px;
+        border: 1px solid var(--placeholder-color);
+        border-right: none;
+        outline: none;
+        border-radius: var(--btn-border-radius) 0 0 var(--btn-border-radius);
+        font-size: var(--primary-font-size);
+        color: var(--primary-color);
+        background: var(--secondary-bgcolor);
+        box-sizing: border-box;
+
+        &::placeholder {
+            color: var(--placeholder-color);
+        }
+    }
+
+    button.form_btn {
+        width: 99px;
+        height: 48px;
+        border-radius: 0 var(--btn-border-radius) var(--btn-border-radius) 0;
+        background-color: var(--btn-main-bgcolor);
+
+        &:hover {
+            background-color: var(--btn-main-bgcolor);
+        }
+    }
+
+    span {
+        display: inline-block;
+        font-size: var(--secondary-font-size);
+        color: var(--secondary-color);
+    }
+}
+
+.bg_img {
+    width: 568px;
+    height: 450px;
+    background: url('../../theme/assets/images/main_bg.png') no-repeat;
+}

@@ -5,18 +5,18 @@
     border-bottom: 1px solid var(--title-color);
 }
 
-.logo {
+.header_logo {
     width: 173px;
     height: 48px;
     margin: 12px 0 20px 16px;
 }
 
-button.btn_contact {
+button.header_btn {
     width: 120px;
     height: 48px;
     margin: 8px 0 24px;
-    background-color: var(--btn-main-bgcolor);
     border-radius: var(--btn-border-radius);
+    background-color: var(--btn-main-bgcolor);
 
     &:hover {
         background-color: var(--btn-main-bgcolor);

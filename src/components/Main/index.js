@@ -5,6 +5,10 @@ import ContactUs from '../ContactUs';
 import Copyright from '../Copyright';
 import Header from '../Header';
 import Footer from '../Footer';
+import BasicInfo from '../BasicInfo';
+import Donation from '../Donation';
+import AboutUs from '../AboutUs';
+import AreasExpertise from '../AreasExpertise';
 
 const Main = () => {
     return (
@@ -13,7 +17,10 @@ const Main = () => {
             <div className = { Styles.wrapper }>
                 <Header />
                 <main className = { Styles.main_content }>
-
+                    <BasicInfo />
+                    <Donation />
+                    <AboutUs />
+                    <AreasExpertise />
                 </main>
                 <Footer />
             </div>

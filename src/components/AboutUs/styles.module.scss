@@ -1,0 +1,125 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+    margin-bottom: 84px;
+}
+
+.title {
+    margin-bottom: 40px;
+    font-size: var(--title-font-size);
+    line-height: 49px;
+    font-weight: 500;
+    color: var(--title-color);
+}
+
+.descr {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+
+    p {
+        margin-bottom: 20px;
+        font-size: var(--primary-font-size);
+        line-height: 24px;
+        color: var(--primary-color);
+    }
+}
+
+.team {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: fit-content;
+    margin-bottom: 30px;
+}
+
+.team_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 170px;
+    height: 336px;
+    padding: 20px 10px 10px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.11);
+    border-radius: var(--card-border-radius);
+    background: var(--secondary-bgcolor);
+
+    div:first-child {
+        width: 130px;
+        height: 130px;
+        border-radius: 50%;
+        margin-bottom: 10px;
+    }
+
+    .card_avatar_ik {
+        background: url('../../theme/assets/images/ava_ivan_k.png') no-repeat;
+    }
+
+    .card_avatar_pp {
+        background: url('../../theme/assets/images/ava_pavlo_p.png') no-repeat;
+    }
+
+    .card_avatar_oc {
+        background: url('../../theme/assets/images/ava_oleks_c.png') no-repeat;
+    }
+
+    .card_avatar_db {
+        background: url('../../theme/assets/images/ava_dmitruy_b.png') no-repeat;
+    }
+
+    .card_avatar_ap {
+        background: url('../../theme/assets/images/ava_andrey_p.png') no-repeat;
+    }
+}
+
+.card_info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h4 {
+        margin-bottom: 5px;
+        font-size: var(--secondary-font-size);
+        line-height: 1.4;
+        font-weight: 700;
+        color: var(--primary-color);
+    }
+
+    p {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+        font-size: 12px;
+        line-height: 1.3;
+        font-weight: 700;
+        color: #828282;
+        text-align: center;
+
+        span {
+            display: inline-block;
+        }
+    }
+
+    p:last-child {
+        margin-bottom: 0;
+        font-size: 12px;
+        line-height: 1.4;
+        font-weight: 400;
+        color: var(--card-color);
+        text-align: center;
+    }
+}
+
+button.btn_contact {
+    width: 120px;
+    height: 48px;
+    border-radius: var(--btn-border-radius);
+    background-color: var(--btn-main-bgcolor);
+
+    &:hover {
+        background-color: var(--btn-main-bgcolor);
+    }
+}
