@@ -1,0 +1,61 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+    margin-bottom: 100px;
+}
+
+.title {
+    margin-bottom: 40px;
+    font-size: var(--title-font-size);
+    line-height: 49px;
+    font-weight: 500;
+    color: var(--title-color);
+}
+
+.descr {
+    width: 95%;
+    margin-bottom: 20px;
+    font-size: var(--primary-font-size);
+    line-height: 24px;
+    color: var(--primary-color);
+}
+
+.expertise {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: fit-content;
+}
+
+.expertise_card {
+    display: flex;
+    flex-direction: column;
+    width: 170px;
+    height: 211px;
+    padding: 20px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.11);
+    border-radius: var(--card-border-radius);
+    background: var(--secondary-bgcolor);
+
+    .content_list {
+        font-size: 12px;
+        line-height: 1.4;
+        font-weight: 400;
+        color: var(--card-color);
+        list-style: inherit;
+        margin-left: 14px;
+        li {
+            margin-bottom: 5px;
+        }
+    }
+
+    h4 {
+        margin-bottom: 7px;
+        font-size: var(--secondary-font-size);
+        line-height: 24px;
+        font-weight: 700;
+        color: var(--primary-color);
+    }
+}
