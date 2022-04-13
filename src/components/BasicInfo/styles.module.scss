@@ -186,9 +186,14 @@
     .info_emergency {
         display: flex;
         justify-content: center;
+        align-items: center;
         width: 100%;
-        height: inherit;
-        text-align: center;
+        height: 56px;
+
+        span:first-child {
+            min-width: 16px;
+            min-height: 14px;
+        }
     }
 
     .info_title {
@@ -205,5 +210,10 @@
 
     .bg_img {
         order: -1;
+        min-width: 280px;
+        width: 280px;
+        min-height: 222px;
+        height: 222px;
+        background-size: cover;
     }
 }
