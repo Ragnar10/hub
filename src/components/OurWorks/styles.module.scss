@@ -123,3 +123,17 @@ button.stepper_btn_back {
         background: url('../../theme/assets/icons/arrow_back.svg') no-repeat;
     }
 }
+
+@media (min-width: 768px) and (max-width: 960px) {
+    button.stepper_btn_next {
+        right: 0;
+    }
+
+    button.stepper_btn_back {
+        left: 0;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+}

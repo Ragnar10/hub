@@ -30,7 +30,6 @@ const BasicInfo = () => {
                 </h1>
                 <p className = { Styles.info_descr }>
                     <span>{ 'Over 1,200 experts in machine learning, cybersecurity ' }</span>
-                    <br />
                     <span>{ 'web and app development at your service.' }</span>
                 </p>
                 <form onSubmit = { submitForm } className = { Styles.info_form }>

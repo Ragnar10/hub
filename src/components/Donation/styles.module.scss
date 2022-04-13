@@ -155,3 +155,70 @@
         color: var(--secondary-color);
     }
 }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .wrapper {
+        margin-bottom: 61px;
+    }
+
+    .pre_title {
+        margin-bottom: 20px;
+    }
+
+    .title {
+        margin-bottom: 20px;
+
+        h3 {
+            line-height: 28px;
+        }
+    }
+
+    .donations_card {
+        width: 310px;
+        height: 83px;
+        margin-bottom: 20px;
+        padding: 10px;
+
+        .card_icon {
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+
+            span {
+                display: inline-block;
+                width: 16px;
+                height: 18px;
+            }
+
+            .card_icon_person {
+                background-size: cover;
+            }
+
+            .card_icon_heart {
+                width: 21px;
+                height: 18px;
+                background-size: cover;
+            }
+
+            .card_icon_building {
+                width: 14px;
+                height: 18px;
+                background-size: cover;
+            }
+        }
+    }
+
+    .card_info {
+        width: calc(100% - 50px);
+
+        div {
+            position: relative;
+
+            span {
+                position: absolute;
+                right: 0;
+                top: 29px;
+            }
+        }
+    }
+}
