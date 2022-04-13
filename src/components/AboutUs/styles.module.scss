@@ -114,6 +114,8 @@
 }
 
 button.btn_contact {
+    text-transform: none;
+    box-shadow: none;
     width: 120px;
     height: 48px;
     border-radius: var(--btn-border-radius);

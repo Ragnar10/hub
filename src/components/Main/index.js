@@ -10,6 +10,7 @@ import Donation from '../Donation';
 import AboutUs from '../AboutUs';
 import AreasExpertise from '../AreasExpertise';
 import Service from "../Service";
+import GetInTouch from "../GetInTouch";
 
 const Main = () => {
     return (
@@ -23,6 +24,7 @@ const Main = () => {
                     <AboutUs />
                     <AreasExpertise />
                     <Service />
+                    <GetInTouch />
                 </main>
                 <Footer />
             </div>
