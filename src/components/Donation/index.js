@@ -47,14 +47,12 @@ const Donation = () => {
                     <span>{ 'Trusted sources guarantee' }</span>
                 </div>
             </div>
-            <div className = { Styles.donations_wrap }>
-                <div className = { Styles.donations }>
-                    {
-                        donations.map((item) => {
-                            return <Card key = { item.id } item = { item } />;
-                        })
-                    }
-                </div>
+            <div className = { Styles.donations }>
+                {
+                    donations.map((item) => {
+                        return <Card key = { item.id } item = { item } />;
+                    })
+                }
             </div>
 
         </section>

@@ -241,11 +241,6 @@
         }
     }
 
-    //.donations_wrap {
-    //    padding: 10px;
-    //    overflow: scroll;
-    //}
-
     .donations {
 
         div:nth-child(n + 3) {
@@ -256,28 +251,6 @@
     .donations_card {
         width: 49%;
     }
-
-    //.donations_card {
-    //    flex-direction: column;
-    //    height: 148px;
-    //    width: 280px;
-    //    margin-bottom: 0;
-    //    margin-right: 10px;
-    //}
-    //.card_info {
-    //    width: 100%;
-    //
-    //    div {
-    //        position: relative;
-    //        justify-content: center;
-    //
-    //        span {
-    //            position: absolute;
-    //            right: 0;
-    //            top: 28px;
-    //        }
-    //    }
-    //}
 }
 
 @media (max-width: 732px) {
@@ -308,32 +281,3 @@
             }
         }
 }
-
-//@media (max-width: 746px) {
-//    .donations_card {
-//        flex-direction: column;
-//        height: 148px;
-//        margin: 0 0 10px;
-//        width: 49%;
-//    }
-//    .card_info {
-//        width: 100%;
-//
-//        div {
-//            position: relative;
-//            justify-content: center;
-//
-//            span {
-//                position: absolute;
-//                right: 0;
-//                top: 28px;
-//            }
-//        }
-//    }
-//}
-//
-//@media (max-width: 612px) {
-//    .donations_card {
-//        width: 100%;
-//    }
-//}

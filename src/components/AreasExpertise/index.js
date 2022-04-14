@@ -37,14 +37,12 @@ const AreasExpertise = () => {
             <p className = { Styles.descr }>
                 { 'There is nothing a volunteer can’t do, find, arrange or deliver with a deadline “expired yesterday” in a high-paced environment with working conditions changing every day and every minute. We use the same motivation when it comes to delivering products to our customers. This is the value we can provide — a quickly released MVP that can be transformed and modified as we go, aiming to achieve the objectives and ambitions set by the client. Being a community of more than 1,200 people willing to contribute to making the world a better place, we are ready to offer you a range of services that can help your business grow. Depending on the flow of the project and the workload with can move team members around in a moment to be able to offer you the best solutions.' }
             </p>
-            <div className = { Styles.expertise_wrap }>
-                <div className = { Styles.expertise }>
-                    {
-                        expertise.map((item) => {
-                            return <Card key = { item.id } item = { item } />;
-                        })
-                    }
-                </div>
+            <div className = { Styles.expertise }>
+                {
+                    expertise.map((item) => {
+                        return <Card key = { item.id } item = { item } />;
+                    })
+                }
             </div>
         </section>
     );
