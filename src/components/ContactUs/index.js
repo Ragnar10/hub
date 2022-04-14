@@ -6,7 +6,7 @@ const ContactUs = () => {
         <section className = { Styles.wrapper }>
             <p className = { Styles.info }>
                 <span>{ 'Are you a Ukrainian developer looking for work?' }</span>
-                <a href = { '' }>{ 'Contact us here' }</a>
+                <a href = { '#contact' }>{ 'Contact us here' }</a>
             </p>
         </section>
     );

@@ -11,7 +11,7 @@
     margin: 12px 0 20px 16px;
 }
 
-button.header_btn {
+a.header_btn {
     text-transform: none;
     box-shadow: none;
     width: 120px;
@@ -32,7 +32,7 @@ button.header_btn {
 }
 
 @media (min-width: 320px) and (max-width: 768px) {
-    button.header_btn {
+    a.header_btn {
         display: none;
     }
 

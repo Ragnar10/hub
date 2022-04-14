@@ -3,12 +3,12 @@ import Styles from './styles.module.scss';
 
 const Card = ({ item }) => {
     return (
-        <div className = { Styles.expertise_card }>
+        <a href = { '#service' } className = { Styles.expertise_card }>
             <div>
                 <span className = { item.class } />
             </div>
             <h4>{ item.title }</h4>
-        </div>
+        </a>
     );
 };
 

@@ -20,7 +20,7 @@ const GetInTouch = () => {
     });
 
     return (
-        <section className = { Styles.wrapper }>
+        <section id = { 'contact' } className = { Styles.wrapper }>
             <div className = { Styles.form_item }>
                 <h2 className = { Styles.title }>{ 'Get in touch' }</h2>
                 <p className = { Styles.info_question }>

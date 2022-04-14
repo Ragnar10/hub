@@ -32,7 +32,7 @@ const services = [
 
 const Service = () => {
     return (
-        <section className = { Styles.wrapper }>
+        <section id = { 'service' } className = { Styles.wrapper }>
             <h2 className = { Styles.title }>{ 'Service examples' }</h2>
             <div className = { Styles.services }>
                 {

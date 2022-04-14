@@ -36,11 +36,11 @@ const BasicInfo = () => {
                     <div>
                         <input
                             type = { 'email' }
-                            { ...register('cardNumber') }
+                            { ...register('email') }
                             placeholder = { 'your@email.ua' }
                             className = { Styles.form_field } />
                         <Button
-                            type = { 'submit' }
+                            href = { '#contact' }
                             variant = { 'contained' }
                             className = { Styles.form_btn }>{ 'Contact' }</Button>
                     </div>

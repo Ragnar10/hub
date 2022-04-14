@@ -19,6 +19,7 @@ const Header = () => {
             </div>
             <Nav />
             <Button
+                href = { '#contact' }
                 variant = { 'contained' }
                 className = { Styles.header_btn }>{ 'Contact' }</Button>
         </header>

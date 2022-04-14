@@ -61,6 +61,7 @@ const AboutUs = () => {
             </div>
             <div className = { Styles.btn_wrap }>
                 <Button
+                    href = { '#contact' }
                     variant = { 'contained' }
                     className = { Styles.btn_contact }>{ 'Contact' }</Button>
             </div>
