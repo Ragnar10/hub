@@ -202,6 +202,17 @@
         line-height: 42px;
     }
 
+    .info_descr {
+        display: block;
+        margin-bottom: 20px;
+        font-size: var(--secondary-font-size);
+
+        span {
+            display: inline;
+        }
+
+    }
+
     .info_form {
         .form_field {
             width: 100%;
