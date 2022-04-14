@@ -9,11 +9,7 @@ const Card = ({ item }) => {
             <div className = { item.class } />
             <div className = { Styles.card_info }>
                 <h4>{ item.name }</h4>
-                <p>
-                    {
-                        item.position.split('_').map((text, idx) => <span key = { idx }>{ text }</span>)
-                    }
-                </p>
+                <p>{ item.position }</p>
                 <p>{ item.descr }</p>
             </div>
         </div>
@@ -22,19 +18,25 @@ const Card = ({ item }) => {
 
 const team = [
     {
-        id: 1, name: 'Ivan Kosyuk', position: 'CEO_FinTech Startup_Entrepreneur', descr: 'UA IT HUB is more than a company - it is a community that grows, adapts and learns', class: Styles.card_avatar_ik,
+        id: 1, name: 'Ivan Kosyuk', position: 'CEO', descr: 'Development of the vision and architecture of the organization', class: Styles.card_avatar_ik,
     },
     {
-        id: 2, name: 'Pavlo Parkhomenko', position: 'President_ML Engineer, R&D_Specialist, IB Analyst', descr: 'Wizard of external communications and building meaningful partnerships with the world', class: Styles.card_avatar_pp,
+        id: 2, name: 'Pavlo Parkhomenko', position: 'President', descr: 'Client communication and partnership development', class: Styles.card_avatar_pp,
     },
     {
-        id: 3, name: 'Oleksandr Cheberiak', position: 'Head of R&D_Startup founder,_entrepreneur', descr: 'Our experience has shown that we love to create products that make the world better.', class: Styles.card_avatar_oc,
+        id: 3, name: 'Oleksandr Cheberiak', position: 'Chief R&D', descr: 'Problem analysis and development of new solutions', class: Styles.card_avatar_oc,
     },
     {
-        id: 4, name: 'Dmirty Bagow', position: 'Experienced CTO', descr: 'Founder of Defi development specialization company IT startups founder Full stack developer', class: Styles.card_avatar_db,
+        id: 4, name: 'Dmirty Bagow', position: 'CTO', descr: 'Technical planning and execution', class: Styles.card_avatar_db,
     },
     {
-        id: 5, name: 'Andrey Paios', position: 'Head of PMO_Project manager,_delivery manager,_product owner', descr: 'Plans are nothing, planning is everything ', class: Styles.card_avatar_ap,
+        id: 5, name: 'Andrey Paios', position: 'Head PM', descr: 'Task management', class: Styles.card_avatar_ap,
+    },
+    {
+        id: 6, name: 'Roman Zakharov', position: 'Advisor', descr: 'Guidance on government work', class: Styles.card_avatar_r,
+    },
+    {
+        id: 7, name: 'Nika Tamayo Flores', position: 'Advisor', descr: 'Guidance on volunteer IT work', class: Styles.card_avatar_n,
     },
 ];
 

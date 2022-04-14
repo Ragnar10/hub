@@ -22,6 +22,9 @@ const images = [
 
 const OurWorks = () => {
     const [activeStep, setActiveStep] = useState(0);
+    const { width } = getComputedStyle(document.body);
+    const currentWidth = parseFloat(width);
+    const height = (currentWidth - 40) * 0.64846;
 
     const handleNext = () => {
         if (activeStep === images.length - 1) {
@@ -52,7 +55,10 @@ const OurWorks = () => {
                         images.filter((item) => item.id === activeStep + 1).map((item) => {
                             return (
                                 <div key = { item.id } className = { Styles.carousel_card }>
-                                    <div className = { Styles.card_img } onClick = { handleNext }>
+                                    <div
+                                        style = { currentWidth < 768 ? { height } : null }
+                                        className = { Styles.card_img }
+                                        onClick = { handleNext }>
                                         <img
                                             key = { item.id } src = { item.img }
                                             alt = { 'carousel image' } />
