@@ -6,23 +6,32 @@ const Footer = () => {
         <footer className = { Styles.footer }>
             <ul className = { Styles.footer_socials }>
                 <li className = { Styles.socials_fb }>
-                    <a href = { '' } />
+                    <a
+                        href = { 'https://www.facebook.com/UAITHUB' } target = { '_blank' }
+                        rel = 'noreferrer' />
                 </li>
                 <li className = { Styles.socials_tg }>
-                    <a href = { '' } />
+                    <a
+                        href = { 'https://t.me/ithub_ua' } target = { '_blank' }
+                        rel = 'noreferrer' />
                 </li>
                 <li className = { Styles.socials_in }>
-                    <a href = { '' } />
+                    <a
+                        href = { 'https://www.linkedin.com/company/ukraine-it-hub' } target = { '_blank' }
+                        rel = 'noreferrer' />
                 </li>
             </ul>
             <div className = { Styles.footer_contacts }>
                 <div className = { Styles.contacts_phone }>
                     <span />
-                    <span>{ '380 00 000 00 00' }</span>
+                    <div>
+                        <span>{ '+16479280691' }</span>
+                        <span>{ '+49 1575 2083098' }</span>
+                    </div>
                 </div>
                 <div className = { Styles.contacts_email }>
                     <span />
-                    <span>{ 'example@mail.com' }</span>
+                    <span>{ 'info@uaithub.com' }</span>
                 </div>
             </div>
         </footer>

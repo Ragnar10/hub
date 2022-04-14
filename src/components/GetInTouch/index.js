@@ -15,7 +15,6 @@ const GetInTouch = () => {
         },
     });
     const submitForm = handleSubmit((values) => {
-        console.log(values);
         reset();
     });
 

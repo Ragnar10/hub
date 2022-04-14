@@ -14,7 +14,6 @@ const BasicInfo = () => {
     });
 
     const submitForm = handleSubmit((values) => {
-        console.log(values);
         reset();
     });
 
