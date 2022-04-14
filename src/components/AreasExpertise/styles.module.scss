@@ -17,9 +17,17 @@
 .descr {
     width: 95%;
     margin-bottom: 20px;
-    font-size: var(--primary-font-size);
-    line-height: 24px;
-    color: var(--primary-color);
+
+    p {
+        margin-bottom: 10px;
+        font-size: var(--primary-font-size);
+        line-height: 24px;
+        color: var(--primary-color);
+    }
+
+    p:last-child {
+        margin-bottom: 0;
+    }
 }
 
 .expertise {

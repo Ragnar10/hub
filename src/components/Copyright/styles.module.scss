@@ -1,6 +1,7 @@
 .wrapper {
     display: flex;
     align-items: center;
+    justify-content: center;
     width: 100%;
     height: 46px;
     background-color: var(--footer-bgcolor);
@@ -8,9 +9,9 @@
 
 .info {
     display: flex;
-    margin-left: 50px;
     font-size: var(--secondary-font-size);
     color: var(--primary-color);
+    align-items: center;
 }
 
 @media (min-width: 320px) and (max-width: 768px) {
@@ -19,7 +20,6 @@
     }
 
     .info {
-        margin-left: 10px;
         font-size: 10px;
         line-height: 18px;
     }
