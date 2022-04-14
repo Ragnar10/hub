@@ -40,7 +40,7 @@ const SideNav = () => {
                             onClick = { () => setIsOpen(!isOpen) }>{ 'Contact' }</a>
                     </li>
                 </ul>
-                <div className = { Styles.contacts }>
+                <div className = { Styles.footer_contacts }>
                     <div className = { Styles.contacts_phone }>
                         <span />
                         <span>{ '380 00 000 00 00' }</span>
