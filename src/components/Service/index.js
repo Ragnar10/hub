@@ -26,7 +26,7 @@ const services = [
         id: 4, title: 'ML', content: ['Image analysis', 'Natural language processing', 'Predictive modeling for time series'],
     },
     {
-        id: 5, title: 'Art', content: ['UI design', 'UX design', 'Logo design', 'Branding'],
+        id: 5, title: 'Visual', content: ['UI design', 'UX design', 'Logo design', 'Branding'],
     },
 ];
 

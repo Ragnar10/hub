@@ -26,7 +26,7 @@ const expertise = [
         id: 4, title: 'ML', class: Styles.card_icon_ml,
     },
     {
-        id: 5, title: 'Art', class: Styles.card_icon_art,
+        id: 5, title: 'Visual', class: Styles.card_icon_art,
     },
 ];
 
@@ -35,7 +35,7 @@ const AreasExpertise = () => {
         <section className = { Styles.wrapper }>
             <h2 className = { Styles.title }>{ 'Areas of expertise' }</h2>
             <p className = { Styles.descr }>
-                { 'There is nothing a volunteer can’t do, find, arrange or deliver with a deadline “expired yesterday” in a high-paced environment with working conditions changing every day and every minute. We use the same motivation when it comes to delivering products to our customers. This is the value we can provide — a quickly released MVP that can be transformed and modified as we go, aiming to achieve the objectives and ambitions set by the client. Being a community of more than 1,200 people willing to contribute to making the world a better place, we are ready to offer you a range of services that can help your business grow. Depending on the flow of the project and the workload with can move team members around in a moment to be able to offer you the best solutions.' }
+                { 'There is nothing a volunteer can’t do, find, arrange or deliver with a deadline “expired yesterday” in a high-paced environment with working conditions changing every day and every minute. This is the value we can provide — a quickly released MVP that can be transformed and modified as we go, aiming to achieve your objectives and ambitions. Depending on the flow of the project and the workload we can move team members around in a moment to offer you the best solutions quickly. Being a community of more than 1,200 people willing to make the world a better place, we are ready to offer you a range of services to help your business grow.' }
             </p>
             <div className = { Styles.expertise }>
                 {
