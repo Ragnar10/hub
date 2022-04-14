@@ -132,6 +132,7 @@
 
     .info_emergency {
         padding: 8px;
+        margin-bottom: 20px;
 
         span:last-child {
             font-size: 12px;
@@ -181,6 +182,7 @@
 
     .info {
         width: 100%;
+        padding: 0 0 60px;
     }
 
     .info_emergency {
@@ -189,6 +191,7 @@
         align-items: center;
         width: 100%;
         height: 56px;
+        margin-bottom: 20px;
 
         span:first-child {
             min-width: 16px;
