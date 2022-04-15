@@ -69,7 +69,7 @@ const OurWorks = () => {
                                             <span>{ 'Type of project' }</span>
                                         </div>
                                         <p>
-                                            { 'Увага тут заглушка Cyber-defense, developing websites and telegram bots, protection and creating mirrors for web-pages, projects using computer vision technology and natural language processing, translation of operational information into 20+ languages, creating creatives and infographics in different formats, information distribution, general web and app development etc. ' }
+                                            { 'Cyber-defense, developing websites and telegram bots, protection and creating mirrors for web-pages, projects using computer vision technology and natural language processing, translation of operational information into 20+ languages, creating creatives and infographics in different formats, information distribution, general web and app development etc. ' }
                                         </p>
                                     </div>
                                 </div>
