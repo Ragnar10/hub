@@ -1,14 +1,14 @@
 // Styles
 import Styles from './styles.module.scss';
 
-const Card = ({ item }) => {
+const Card = ({ item, onDown }) => {
     return (
-        <a href = { '#service' } className = { Styles.expertise_card }>
+        <div className = { Styles.expertise_card } onClick = { () => onDown() }>
             <div>
                 <span className = { item.class } />
             </div>
             <h4>{ item.title }</h4>
-        </a>
+        </div>
     );
 };
 
@@ -31,6 +31,14 @@ const expertise = [
 ];
 
 const AreasExpertise = () => {
+    const onDown = () => {
+        const service = document.getElementById('service');
+        const coords = service.getBoundingClientRect();
+        const scroll = window.scrollY;
+        const result = coords.top + scroll - 80;
+        window.scrollTo(0, result);
+    };
+
     return (
         <section className = { Styles.wrapper }>
             <h2 className = { Styles.title }>{ 'Areas of expertise' }</h2>
@@ -42,7 +50,9 @@ const AreasExpertise = () => {
             <div className = { Styles.expertise }>
                 {
                     expertise.map((item) => {
-                        return <Card key = { item.id } item = { item } />;
+                        return <Card
+                            key = { item.id } item = { item }
+                            onDown = { onDown } />;
                     })
                 }
             </div>

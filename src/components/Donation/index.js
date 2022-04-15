@@ -3,7 +3,11 @@ import Styles from './styles.module.scss';
 
 const Card = ({ item }) => {
     return (
-        <div className = { Styles.donations_card }>
+        <a
+            href = { item.link }
+            target = { '_blank' }
+            rel = 'noreferrer'
+            className = { Styles.donations_card }>
             <div className = { Styles.card_icon }>
                 <span className = { item.class } />
             </div>
@@ -14,22 +18,38 @@ const Card = ({ item }) => {
                 </div>
                 <span>{ item.descr }</span>
             </div>
-        </div>
+        </a>
     );
 };
 
 const donations = [
     {
-        id: 1, title: 'Ukraine’s Armed Forces', descr: 'by the National Bank of Ukraine', class: Styles.card_icon_person,
+        id:    1,
+        title: 'Ukraine’s Armed Forces',
+        descr: 'by the National Bank of Ukraine',
+        class: Styles.card_icon_person,
+        link:  'https://bank.gov.ua/en/news/all/natsionalniy-bank-vidkriv-spetsrahunok-dlya-zboru-koshtiv-na-potrebi-armiyi',
     },
     {
-        id: 2, title: 'The Come Back Alive Fund', descr: 'by savelife.in.ua', class: Styles.card_icon_heart,
+        id:    2,
+        title: 'The Come Back Alive Fund',
+        descr: 'by savelife.in.ua',
+        class: Styles.card_icon_heart,
+        link:  'https://savelife.in.ua/donate/',
     },
     {
-        id: 3, title: 'Nova Ukraine', descr: 'by Nova Ukraine', class: Styles.card_icon_building,
+        id:    3,
+        title: 'Nova Ukraine',
+        descr: 'by Nova Ukraine',
+        class: Styles.card_icon_building,
+        link:  'https://novaukraine.org/donate/',
     },
     {
-        id: 4, title: 'Razom', descr: 'by Razom', class: Styles.card_icon_building,
+        id:    4,
+        title: 'Razom',
+        descr: 'by Razom',
+        class: Styles.card_icon_building,
+        link:  'https://razomforukraine.org/donate/',
     },
 ];
 

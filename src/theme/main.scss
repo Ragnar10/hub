@@ -2,8 +2,30 @@
 @import 'scss/fonts';
 @import 'scss/variables';
 
-html {
+html, body {
     font-family: Epilogue, sans-serif;
     font-style: normal;
     font-weight: normal;
+}
+
+#root {
+    /*Scroll style*/
+
+    ::-webkit-scrollbar {
+        width: 4px;
+        height: 4px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background-color: inherit;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: #c4c4c4;
+        border-radius: 3px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: rgb(54, 56, 58);
+    }
 }

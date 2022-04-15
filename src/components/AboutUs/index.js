@@ -27,7 +27,7 @@ const team = [
         id: 3, name: 'Oleksandr Cheberiak', position: 'Chief R&D', descr: 'Problem analysis and development of new solutions', class: Styles.card_avatar_oc,
     },
     {
-        id: 4, name: 'Dmirty Bagow', position: 'CTO', descr: 'Technical planning and execution', class: Styles.card_avatar_db,
+        id: 4, name: 'Dmitry Bagow', position: 'CTO', descr: 'Technical planning and execution', class: Styles.card_avatar_db,
     },
     {
         id: 5, name: 'Andrey Paios', position: 'Head PM', descr: 'Task management', class: Styles.card_avatar_ap,
