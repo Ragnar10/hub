@@ -14,7 +14,7 @@ const Card = ({ item }) => {
 
 const services = [
     {
-        id: 1, title: 'Web', content: ['Simple web sites', 'Corporate web sites and company intranets', 'Custom solutions: portals, games, automatization of management.'],
+        id: 1, title: 'Web', content: ['Simple web sites', 'Corporate web sites and company intranets', 'Custom solutions: portals, games, automatization of management'],
     },
     {
         id: 2, title: 'Apps', content: ['Native android apps', 'Native iOS apps', 'Unity cross platform apps'],

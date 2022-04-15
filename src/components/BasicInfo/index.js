@@ -22,14 +22,14 @@ const BasicInfo = () => {
             <div className = { Styles.info }>
                 <div className = { Styles.info_emergency }>
                     <span />
-                    <span>{ 'Emergency opportunity – get in touch, hire today.' }</span>
+                    <span>{ 'Emergency opportunity – get in touch, hire today' }</span>
                 </div>
                 <h1 className = { Styles.info_title }>
-                    { 'Ukrainian developers are open for work.' }
+                    { 'Ukrainian developers are open for work' }
                 </h1>
                 <p className = { Styles.info_descr }>
                     <span>{ 'Over 1,200 experts in machine learning, cybersecurity' }</span>
-                    <span>{ 'web and app development at your service.' }</span>
+                    <span>{ 'web and app development at your service' }</span>
                 </p>
                 <form onSubmit = { submitForm } className = { Styles.info_form }>
                     <div>
@@ -43,7 +43,7 @@ const BasicInfo = () => {
                             variant = { 'contained' }
                             className = { Styles.form_btn }>{ 'Contact' }</Button>
                     </div>
-                    <span>{ 'We’ll send you an email with next steps.' }</span>
+                    <span>{ 'We’ll send you an email with next steps' }</span>
                 </form>
             </div>
             <div className = { Styles.bg_img } />

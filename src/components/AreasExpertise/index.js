@@ -43,9 +43,9 @@ const AreasExpertise = () => {
         <section className = { Styles.wrapper }>
             <h2 className = { Styles.title }>{ 'Areas of expertise' }</h2>
             <div className = { Styles.descr }>
-                <p>{ 'There is nothing a volunteer can’t do, find, arrange or deliver with a deadline “expired yesterday” in a high-paced environment with working conditions changing every day and every minute. ' }</p>
-                <p>{ 'This is the value we can provide — a quickly released MVP that can be transformed and modified as we go, aiming to achieve your objectives and ambitions. Depending on the flow of the project and the workload we can move team members around in a moment to offer you the best solutions quickly.' }</p>
-                <p>{ 'Being a community of more than 1,200 people willing to make the world a better place, we are ready to offer you a range of services to help your business grow.' }</p>
+                <p>{ 'There is nothing a volunteer can’t do, find, arrange or deliver with a deadline “expired yesterday” in a high-paced environment with working conditions changing every day and every minute' }</p>
+                <p>{ 'This is the value we can provide — a quickly released MVP that can be transformed and modified as we go, aiming to achieve your objectives and ambitions. Depending on the flow of the project and the workload we can move team members around in a moment to offer you the best solutions quickly' }</p>
+                <p>{ 'Being a community of more than 1,200 people willing to make the world a better place, we are ready to offer you a range of services to help your business grow' }</p>
             </div>
             <div className = { Styles.expertise }>
                 {

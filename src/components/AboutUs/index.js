@@ -46,10 +46,10 @@ const AboutUs = () => {
             <h2 className = { Styles.title }>{ 'Who we are' }</h2>
             <div className = { Styles.descr }>
                 <p>
-                    { 'Our community is engaged in volunteer work in different areas all around Ukraine. Each of our teammates has gained tons of valuable IT experience throughout the years of working in different companies, both small start-ups and big corporations. They have now faced a job loss due to the war and are looking for your projects to put into action.' }
+                    { 'Our community is engaged in volunteer work in different areas all around Ukraine. Each of our teammates has gained tons of valuable IT experience throughout the years of working in different companies, both small start-ups and big corporations. They have now faced a job loss due to the war and are looking for your projects to put into action' }
                 </p>
                 <p>
-                    { 'We can both continue contributing to volunteer work in Ukraine and financially support those in need by working on your projects and delivering products. You are guaranteed to receive a high-quality result in a short period of time.' }
+                    { 'We can both continue contributing to volunteer work in Ukraine and financially support those in need by working on your projects and delivering products. You are guaranteed to receive a high-quality result in a short period of time' }
                 </p>
             </div>
             <div className = { Styles.team }>
