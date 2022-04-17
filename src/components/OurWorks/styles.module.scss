@@ -34,12 +34,12 @@
 .carousel_card {
     display: flex;
     flex-direction: column;
-    width: 718px;
+    width: 788px;
     height: fit-content;
 }
 
 .card_img {
-    width: 718px;
+    width: 788px;
     height: 511px;
     margin-bottom: 16px;
 
@@ -56,7 +56,7 @@
     width: 100%;
     height: fit-content;
 
-    div {
+    .info_title {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -77,10 +77,14 @@
         }
     }
 
-    p {
-        font-size: var(--secondary-font-size);
-        line-height: 1.6;
-        color: var(--primary-color);
+    .info_text {
+        min-height: 114px;
+
+        p {
+            font-size: 12px;
+            line-height: 1.6;
+            color: var(--primary-color);
+        }
     }
 }
 
@@ -162,7 +166,7 @@ button.stepper_btn_back {
     }
 
     .card_info {
-        div {
+        .info_title {
             margin-bottom: 6px;
 
             h3 {
@@ -176,8 +180,10 @@ button.stepper_btn_back {
             }
         }
 
-        p {
-            font-size: 10px;
+        .info_text {
+            p {
+                font-size: 10px;
+            }
         }
     }
 
@@ -226,7 +232,7 @@ button.stepper_btn_back {
     }
 
     .card_info {
-        div {
+        .info_title {
             display: flex;
             flex-direction: column;
 
@@ -239,5 +245,29 @@ button.stepper_btn_back {
     button.stepper_btn_next,
     button.stepper_btn_back {
         display: none;
+    }
+}
+
+@media (min-width: 640px) and (max-width: 768px) {
+    .card_info {
+        min-height: 203px;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 640px) {
+    .card_info {
+        min-height: 265px;
+    }
+}
+
+@media (min-width: 360px) and (max-width: 480px) {
+    .card_info {
+        min-height: 323px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 360px) {
+    .card_info {
+        min-height: 366px;
     }
 }

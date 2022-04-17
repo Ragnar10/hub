@@ -109,13 +109,13 @@
 .bg_img {
     width: 568px;
     height: 450px;
-    background: url('../../theme/assets/images/main_bg.png') no-repeat;
+    background: url('../../theme/assets/images/main_bg.svg') no-repeat;
 }
 
 @media (min-width: 1024px) and (max-width: 1280px) {
     .bg_img {
-        width: 388px;
-        height: 306px;
+        width: 413px;
+        height: 325px;
         background-size: cover;
     }
 }
