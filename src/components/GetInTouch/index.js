@@ -1,22 +1,64 @@
+// Core
+import { useState } from 'react';
 // Instruments
-import { useForm } from 'react-hook-form';
+// import { useForm } from 'react-hook-form';
+import emailjs from 'emailjs-com';
 // Mui
-import { Button } from '@mui/material';
+import { Button, Alert, Snackbar } from '@mui/material';
 // Styles
 import Styles from './styles.module.scss';
 // Images
 import btnSend from '../../theme/assets/icons/btn_send.svg';
+// Others
+import { variables } from './variables';
 
 const GetInTouch = () => {
-    const { register, handleSubmit, reset } = useForm({
-        mode:          'onSubmit',
-        defaultValues: {
-            email: '',
-        },
-    });
-    const submitForm = handleSubmit((values) => {
-        reset();
-    });
+    const [open, setOpen] = useState(false);
+    const [answer, setAnswer] = useState({});
+
+    const alertSettings = {
+        vertical:   'bottom',
+        horizontal: 'right',
+    };
+
+    // const { register, handleSubmit, reset } = useForm({
+    //     mode:          'onSubmit',
+    //     defaultValues: {
+    //         name:    '',
+    //         email:   '',
+    //         message: '',
+    //     },
+    // });
+
+    const submitForm = (event) => {
+        event.preventDefault();
+        emailjs
+            .sendForm(variables.SERVICE_ID, variables.TEMPLATE_ID, event.target, variables.USER_ID)
+            .then((result) => {
+                if (result.status === 200) {
+                    setAnswer({ status: result.status, text: 'Message Sent, We will get back to you shortly' });
+                    setOpen(true);
+                    event.target.reset();
+                }
+
+                return result.status;
+            })
+            .catch((error) => {
+                if (error.status === 400) {
+                    setAnswer({ status: error.status, text: 'An error occurred, Please try again' });
+                    setOpen(true);
+                    event.target.reset();
+                }
+            });
+    };
+
+    const handleClose = (event, reason) => {
+        if (reason === 'clickaway') {
+            return;
+        }
+
+        setOpen(false);
+    };
 
     return (
         <section id = { 'contact' } className = { Styles.wrapper }>
@@ -32,16 +74,20 @@ const GetInTouch = () => {
             <div className = { Styles.form_item }>
                 <form onSubmit = { submitForm } className = { Styles.form }>
                     <input
-                        { ...register('firstName') }
+                        name = { 'name' }
                         placeholder = { 'Your name' }
+                        required
                         className = { Styles.form_field } />
                     <input
-                        { ...register('email') }
+                        name = { 'email' }
                         placeholder = { 'Your email' }
+                        pattern = '[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$'
+                        required
                         className = { Styles.form_field } />
                     <input
-                        { ...register('message') }
+                        name = { 'message' }
                         placeholder = { 'Your message' }
+                        required
                         className = { Styles.form_field } />
                     <Button
                         type = { 'submit' }
@@ -51,7 +97,17 @@ const GetInTouch = () => {
                     </Button>
                 </form>
             </div>
-
+            <Snackbar
+                anchorOrigin = { alertSettings }
+                open = { open }
+                autoHideDuration = { 5000 }
+                onClose = { handleClose }>
+                <Alert
+                    onClose = { handleClose } severity = { answer.status === 200 ? 'success' : 'error' }
+                    sx = { { width: '100%' } }>
+                    { answer.text }
+                </Alert>
+            </Snackbar>
         </section>
     );
 };
