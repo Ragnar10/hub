@@ -9,8 +9,6 @@ import { Button, Alert, Snackbar } from '@mui/material';
 import Styles from './styles.module.scss';
 // Images
 import btnSend from '../../theme/assets/icons/btn_send.svg';
-// Others
-import { variables } from './variables';
 
 const GetInTouch = () => {
     const [open, setOpen] = useState(false);
@@ -33,7 +31,12 @@ const GetInTouch = () => {
     const submitForm = (event) => {
         event.preventDefault();
         emailjs
-            .sendForm(variables.SERVICE_ID, variables.TEMPLATE_ID, event.target, variables.USER_ID)
+            .sendForm(
+                process.env.REACT_APP_SERVICE_ID,
+                process.env.REACT_APP_TEMPLATE_ID,
+                event.target,
+                process.env.REACT_APP_USER_ID,
+            )
             .then((result) => {
                 if (result.status === 200) {
                     setAnswer({ status: result.status, text: 'Message Sent, We will get back to you shortly' });
