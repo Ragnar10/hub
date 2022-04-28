@@ -1,44 +1,37 @@
 // Styles
 import Styles from './styles.module.scss';
 
-const Card = ({ item, onDown }) => {
+const Card = ({ item }) => {
     return (
-        <div className = { Styles.expertise_card } onClick = { () => onDown() }>
-            <div>
-                <span className = { item.class } />
-            </div>
+        <div className = { Styles.expertise_card }>
+            <div className = { item.class } />
             <h4>{ item.title }</h4>
+            <ul>
+                { item.descr.map((listItem, idx) => <li key = { idx }>{ listItem }</li>) }
+            </ul>
         </div>
     );
 };
 
 const expertise = [
     {
-        id: 1, title: 'Web', class: Styles.card_icon_web,
+        id: 1, title: 'Web', descr: ['Simple web sites', 'Corporate web sites and company intranets', 'Custom solutions: portals, games, automatization of management'], class: Styles.card_icon_web,
     },
     {
-        id: 2, title: 'Apps', class: Styles.card_icon_apps,
+        id: 2, title: 'Apps', descr: ['Native android apps', 'Native iOS apps', 'Unity cross platform apps'], class: Styles.card_icon_apps,
     },
     {
-        id: 3, title: 'DeFi', class: Styles.card_icon_defi,
+        id: 3, title: 'DeFi', descr: ['Landings', 'Games', 'Tokens', 'Smart contracts'], class: Styles.card_icon_defi,
     },
     {
-        id: 4, title: 'ML', class: Styles.card_icon_ml,
+        id: 4, title: 'ML', descr: ['Image analysis', 'Natural language processing', 'Predictive modeling for time series'], class: Styles.card_icon_ml,
     },
     {
-        id: 5, title: 'Visual', class: Styles.card_icon_art,
+        id: 5, title: 'Visual', descr: ['UI design', 'UX design', 'Logo design', 'Branding'], class: Styles.card_icon_art,
     },
 ];
 
 const AreasExpertise = () => {
-    const onDown = () => {
-        const service = document.getElementById('service');
-        const coords = service.getBoundingClientRect();
-        const scroll = window.scrollY;
-        const result = coords.top + scroll - 80;
-        window.scrollTo(0, result);
-    };
-
     return (
         <section className = { Styles.wrapper }>
             <h2 className = { Styles.title }>{ 'Areas of expertise' }</h2>
@@ -50,9 +43,7 @@ const AreasExpertise = () => {
             <div className = { Styles.expertise }>
                 {
                     expertise.map((item) => {
-                        return <Card
-                            key = { item.id } item = { item }
-                            onDown = { onDown } />;
+                        return <Card key = { item.id } item = { item } />;
                     })
                 }
             </div>

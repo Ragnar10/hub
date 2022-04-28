@@ -1,6 +1,7 @@
 // Core
 import { useState } from 'react';
 // Styles
+import { Button } from '@mui/material';
 import Styles from './styles.module.scss';
 
 const SideNav = () => {
@@ -9,7 +10,7 @@ const SideNav = () => {
     const dropdown = isOpen ? Styles.side_nav_menu_open : Styles.side_nav_menu;
     const shadow = isOpen ? Styles.side_nav_shadow : Styles.side_nav_shadow_hide;
     const { height } = getComputedStyle(document.body);
-    const h = parseFloat(height) - 136;
+    const h = parseFloat(height) - 80;
 
     return (
         <section className = { Styles.side_nav }>
@@ -40,12 +41,22 @@ const SideNav = () => {
                             onClick = { () => setIsOpen(!isOpen) }>{ 'Contact' }</a>
                     </li>
                 </ul>
+                <div className = { Styles.auth }>
+                    <Button
+                        variant = { 'text' }
+                        className = { Styles.auth_login_btn }>{ 'Login' }</Button>
+                    <Button
+                        variant = { 'contained' }
+                        className = { Styles.auth_reg_btn }>{ 'Register' }</Button>
+                </div>
                 <div className = { Styles.footer_contacts }>
                     <div className = { Styles.contacts_phone }>
-                        <span />
-                        <span />
                         <div>
+                            <span />
                             <span>{ '+16479280691' }</span>
+                        </div>
+                        <div>
+                            <span />
                             <span>{ '+49 1575 2083098' }</span>
                         </div>
                     </div>

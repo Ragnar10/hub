@@ -1,9 +1,9 @@
 .wrapper {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: var(--desktop-width);
     height: fit-content;
-    margin-bottom: 100px;
+    margin: 0 auto 150px;
 }
 
 .title {
@@ -15,8 +15,8 @@
 }
 
 .descr {
-    width: 95%;
-    margin-bottom: 20px;
+    width: 75%;
+    margin-bottom: 30px;
 
     p {
         margin-bottom: 10px;
@@ -41,63 +41,89 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 170px;
-    height: 211px;
+    width: 210px;
+    height: 329px;
     padding: 20px;
-    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.11);
+    box-shadow: 0 4px 10px rgba(34, 34, 34, 0.08);;
     border-radius: var(--card-border-radius);
-    background: var(--secondary-bgcolor);
-    cursor: pointer;
 
     div {
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 64px;
-        height: 64px;
-        border-radius: 50%;
-        margin-top: 30px;
-        margin-bottom: 50px;
-        background-color: var(--icon-bgcolor);
-
-        span {
-            display: inline-block;
-            width: 30px;
-            height: 30px;
-        }
-
-        .card_icon_web {
-            background: url('../../theme/assets/icons/web.svg') no-repeat center;
-        }
-
-        .card_icon_apps {
-            background: url('../../theme/assets/icons/apps.svg') no-repeat center;
-        }
-
-        .card_icon_defi {
-            background: url('../../theme/assets/icons/defi.svg') no-repeat center;
-        }
-
-        .card_icon_ml {
-            background: url('../../theme/assets/icons/ml.svg') no-repeat center;
-        }
-
-        .card_icon_art {
-            background: url('../../theme/assets/icons/art.svg') no-repeat center;
-        }
+        width: 70px;
+        height: 70px;
+        margin-top: 10px;
+        margin-bottom: 20px;
     }
 
+    .card_icon_web {
+        background: url('../../theme/assets/icons/web.svg') no-repeat center;
+    }
+
+    .card_icon_apps {
+        background: url('../../theme/assets/icons/apps.svg') no-repeat center;
+    }
+
+    .card_icon_defi {
+        background: url('../../theme/assets/icons/defi.svg') no-repeat center;
+    }
+
+    .card_icon_ml {
+        background: url('../../theme/assets/icons/ml.svg') no-repeat center;
+    }
+
+    .card_icon_art {
+        background: url('../../theme/assets/icons/art.svg') no-repeat center;
+    }
+
+
     h4 {
-        margin-bottom: 3px;
+        margin-bottom: 20px;
         font-size: var(--secondary-font-size);
         line-height: 24px;
         font-weight: 700;
         color: var(--primary-color);
     }
+
+    ul {
+        padding-left: 15px;
+        font-size: 12px;
+        line-height: 1.4;
+        font-weight: 400;
+        color: var(--card-color);
+        list-style: inherit;
+
+        li {
+            margin-bottom: 5px;
+        }
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1200px) {
+    .wrapper {
+        width: var(--small-desktop-width);
+        margin-bottom: 130px;
+    }
+
+    .expertise {
+        overflow: auto;
+
+        & > div:first-child {
+            margin-left: 9px;
+        }
+    }
+
+    .expertise_card {
+        min-width: 210px;
+        margin-right: 9px;
+        margin-bottom: 20px;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
     .wrapper {
+        width: var(--tablet-width);
         margin-bottom: 50px;
     }
 
@@ -116,7 +142,7 @@
     }
 
     .expertise_card {
-        min-width: 170px;
+        min-width: 210px;
         margin-right: 9px;
         margin-bottom: 20px;
     }
@@ -124,6 +150,7 @@
 
 @media (min-width: 320px) and (max-width: 768px) {
     .wrapper {
+        width: var(--mobile-width);
         margin-bottom: 60px;
     }
 
@@ -133,6 +160,7 @@
     }
 
     .descr {
+        width: 100%;
         font-size: 14px;
     }
 
@@ -144,35 +172,17 @@
         }
     }
 
+    .expertise {
+        overflow: auto;
+
+        & > div:first-child {
+            margin-left: 9px;
+        }
+    }
+
     .expertise_card {
-        min-width: 150px;
-        height: 116px;
+        min-width: 210px;
         margin-right: 9px;
         margin-bottom: 20px;
-        padding: 0;
-
-        div {
-            width: 40px;
-            height: 40px;
-            margin: 23px 0 6px;
-
-            .card_icon_web,
-            .card_icon_apps,
-            .card_icon_defi,
-            .card_icon_ml,
-            .card_icon_art{
-                background-size: cover;
-            }
-
-            span {
-                width: 18px;
-                height: 18px;
-                background-size: cover;
-            }
-        }
-
-        h4 {
-            font-size: var(--primary-font-size);
-        }
     }
 }

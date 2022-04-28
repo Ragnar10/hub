@@ -1,14 +1,14 @@
 .nav {
-    margin: 24px 43px 40px auto;
-
     ul {
         display: flex;
         align-items: center;
 
         li {
-            margin-right: 48px;
+            margin-right: 40px;
 
             a {
+                font-size: 18px;
+                line-height: 22px;
                 color: var(--title-color)
             }
         }
@@ -19,15 +19,19 @@
     }
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 1024px) and (max-width: 1200px) {
     .nav {
-        margin-right: 20px;
-
         ul {
             li {
                 margin-right: 20px;
             }
         }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .nav {
+        display: none;
     }
 }
 

@@ -7,8 +7,6 @@ import emailjs from 'emailjs-com';
 import { Button, Alert, Snackbar } from '@mui/material';
 // Styles
 import Styles from './styles.module.scss';
-// Images
-import btnSend from '../../theme/assets/icons/btn_send.svg';
 
 const GetInTouch = () => {
     const [open, setOpen] = useState(false);
@@ -65,40 +63,44 @@ const GetInTouch = () => {
 
     return (
         <section id = { 'contact' } className = { Styles.wrapper }>
-            <div className = { Styles.form_item }>
-                <h2 className = { Styles.title }>{ 'Get in touch' }</h2>
-                <p className = { Styles.info_question }>
-                    { ' Not sure where to start? ' }
-                </p>
-                <p className = { Styles.info_message }>
-                    { 'Tell us about your product, your timeline and where you\'re located. We read and reply to every message' }
-                </p>
-            </div>
-            <div className = { Styles.form_item }>
-                <form onSubmit = { submitForm } className = { Styles.form }>
-                    <input
-                        name = { 'name' }
-                        placeholder = { 'Your name' }
-                        required
-                        className = { Styles.form_field } />
-                    <input
-                        name = { 'email' }
-                        placeholder = { 'Your email' }
-                        pattern = '[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$'
-                        required
-                        className = { Styles.form_field } />
-                    <input
-                        name = { 'message' }
-                        placeholder = { 'Your message' }
-                        required
-                        className = { Styles.form_field } />
-                    <Button
-                        type = { 'submit' }
-                        variant = { 'contained' }
-                        className = { Styles.form_btn }>
-                        { 'Send' } <span><img src = { btnSend } alt = '' /></span>
-                    </Button>
-                </form>
+            <div>
+                <div className = { Styles.form_item }>
+                    <h2 className = { Styles.title }>{ 'Get in touch' }</h2>
+                    <p className = { Styles.info_question }>
+                        { ' Not sure where to start? ' }
+                    </p>
+                    <p className = { Styles.info_message }>
+                        { 'Tell us about your product, your timeline and where you\'re located. We read and reply to every message' }
+                    </p>
+                </div>
+                <div className = { Styles.form_item }>
+                    <form onSubmit = { submitForm } className = { Styles.form }>
+                        <div>
+                            <input
+                                name = { 'name' }
+                                placeholder = { 'Your name' }
+                                required
+                                className = { Styles.form_field } />
+                            <input
+                                name = { 'email' }
+                                placeholder = { 'Your email' }
+                                pattern = '[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$'
+                                required
+                                className = { Styles.form_field } />
+                        </div>
+                        <textarea
+                            name = { 'message' }
+                            placeholder = { 'Your message' }
+                            required
+                            className = { Styles.form_field } />
+                        <Button
+                            type = { 'submit' }
+                            variant = { 'contained' }
+                            className = { Styles.form_btn }>
+                            { 'Send' }
+                        </Button>
+                    </form>
+                </div>
             </div>
             <Snackbar
                 anchorOrigin = { alertSettings }

@@ -1,27 +1,25 @@
 :root {
     /* background-color */
-    --main-bgcolor: #FCFCFC;
-    --secondary-bgcolor: #FFFFFF;
-    --header-bgcolor: #FFEFEE;
-    --footer-bgcolor: #EEEEEE;
-    --btn-main-bgcolor: #5D5FEF;
-    --icon-bgcolor: rgba(248, 212, 91, 0.1);
-    --emergency-bgcolor: #FCF8E1;
+    --main-bgcolor: #FFFFFF;
+    --footer-bgcolor: #FCFCFC;
+    --copy-bgcolor: #EEEEEE;
+    --btn-main-bgcolor: #302BDB;
+    --emergency-bgcolor: #E8EFFF;
+    --border-bgcolor: rgba(153, 153, 153, 0.5);
     /* color */
     --primary-color: #252525;
     --secondary-color: #999999;
     --title-color: #222222;
     --card-color: #4F4F4F;
-    --placeholder-color: #B0B0B0;
-    --header-link-color: #E7453B;
-    --emergency-color: #C48200;
     /* font-size */
     --primary-font-size: 16px;
     --secondary-font-size: 14px;
     --title-font-size: 48px;
     /* dimensions */
-    --desktop-width: 1440px;
-    --desktop-wrapper-width: 888px;
+    --desktop-width: 1170px;
+    --small-desktop-width: 960px;
+    --tablet-width: 720px;
+    --mobile-width: calc(100% - 40px);
     --btn-border-radius: 4px;
     --card-border-radius: 8px;
 }

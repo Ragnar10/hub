@@ -13,15 +13,21 @@ const Header = () => {
         <header className = { Styles.header }>
             <SideNav />
             <div className = { Styles.header_logo }>
-                <a href = { '' }>
+                <a href = { '/' }>
                     <img src = { logo } alt = { 'logo image' } />
                 </a>
             </div>
-            <Nav />
-            <Button
-                href = { '#contact' }
-                variant = { 'contained' }
-                className = { Styles.header_btn }>{ 'Contact' }</Button>
+            <div className = { Styles.header_interaction }>
+                <Nav />
+                <div className = { Styles.interaction_auth }>
+                    <Button
+                        variant = { 'text' }
+                        className = { Styles.auth_login_btn }>{ 'Login' }</Button>
+                    <Button
+                        variant = { 'contained' }
+                        className = { Styles.auth_reg_btn }>{ 'Register' }</Button>
+                </div>
+            </div>
         </header>
     );
 };

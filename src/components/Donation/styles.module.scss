@@ -1,9 +1,9 @@
 .wrapper {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: var(--desktop-width);
     height: fit-content;
-    margin-bottom: 100px;
+    margin: 0 auto 150px;
 }
 
 .pre_title {
@@ -11,22 +11,13 @@
     align-items: center;
     width: 100%;
     height: fit-content;
-    margin-bottom: 16px;
+    margin-bottom: 10px;
 
-    span:first-child {
+    span {
         display: inline-block;
-        width: 123px;
-        margin-right: 16px;
         font-size: var(--secondary-font-size);
         line-height: 24px;
-        color: var(--primary-color);
-    }
-
-    span:last-child {
-        display: inline-block;
-        width: calc(100% - 139px);
-        height: 1px;
-        background-color: #E6E6E6;
+        color: var(--secondary-color);
     }
 }
 
@@ -35,7 +26,7 @@
     align-items: center;
     width: 100%;
     height: fit-content;
-    margin-bottom: 32px;
+    margin-bottom: 16px;
 
     h3 {
         font-size: 20px;
@@ -49,15 +40,7 @@
         align-items: center;
         margin-left: auto;
 
-        span:first-child {
-            display: inline-block;
-            width: 16px;
-            height: 16px;
-            margin-right: 8px;
-            background: url('../../theme/assets/icons/shield.svg') no-repeat;
-        }
-
-        span:last-child {
+        span {
             display: inline-block;
             font-size: var(--secondary-font-size);
             line-height: 24px;
@@ -70,95 +53,105 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
-    div:nth-child(n + 3) {
-        margin-bottom: 0;
-    }
 }
 
 .donations_card {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    width: 436px;
-    height: 96px;
-    margin-bottom: 16px;
-    padding: 16px;
-    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.11);
+    width: 270px;
+    height: 185px;
+    padding: 20px 14px 10px;
+    box-shadow: 0 4px 10px rgba(34, 34, 34, 0.08);;
     border-radius: var(--card-border-radius);
-    background-color: var(--secondary-bgcolor);
     cursor: pointer;
 
     .card_icon {
-        display: flex;
-        align-items: center;
-        justify-content: center;
         width: 64px;
         height: 64px;
-        margin-right: 16px;
+        margin-bottom: 10px;
         border-radius: 50%;
-        background-color: var(--icon-bgcolor);
+    }
 
-        span {
-            display: inline-block;
-            width: 22px;
-            height: 24px;
-        }
+    .card_icon_person {
+        background: url('../../theme/assets/icons/person_military.svg') no-repeat;
+    }
 
-        .card_icon_person {
-            background: url('../../theme/assets/icons/person_military.svg') no-repeat;
-        }
+    .card_icon_heart {
+        background: url('../../theme/assets/icons/heart.svg') no-repeat;
+    }
 
-        .card_icon_heart {
-            width: 28px;
-            height: 23px;
-            background: url('../../theme/assets/icons/heart.svg') no-repeat;
-        }
-
-        .card_icon_building {
-            width: 18px;
-            height: 24px;
-            background: url('../../theme/assets/icons/building.svg') no-repeat;
-        }
+    .card_icon_building {
+        background: url('../../theme/assets/icons/building.svg') no-repeat;
     }
 }
 
 .card_info {
     display: flex;
     flex-direction: column;
-    width: calc(100% - 80px);
+    align-items: center;
+    width: 100%;
 
     div {
         display: flex;
         align-items: center;
+        justify-content: center;
         width: 100%;
-        justify-content: space-between;
+        margin-bottom: 5px;
 
         h4 {
+            margin-right: 7px;
             font-size: var(--primary-font-size);
             line-height: 24px;
             font-weight: 700;
+            white-space: nowrap;
             color: var(--primary-color);
         }
 
         span {
             display: inline-block;
-            width: 14px;
-            height: 14px;
+            width: 24px;
+            height: 24px;
             background: url('../../theme/assets/icons/arrow.svg') no-repeat;
         }
     }
 
     & > span {
         display: inline-block;
+        padding: 0 20px;
         font-size: var(--secondary-font-size);
-        line-height: 24px;
+        line-height: 26px;
         color: var(--secondary-color);
+        text-align: center;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1200px) {
+    .wrapper {
+        width: var(--small-desktop-width);
+        margin-bottom: 130px;
+    }
+
+    .donations {
+        flex-wrap: nowrap;
+        overflow: auto;
+
+        .donations_card:first-child {
+            margin-left: 9px;
+        }
+    }
+
+    .donations_card {
+        min-width: 270px;
+        margin-right: 9px;
+        margin-bottom: 20px;
     }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
     .wrapper {
-        margin-bottom: 61px;
+        width: var(--tablet-width);
+        margin-bottom: 60px;
     }
 
     .pre_title {
@@ -173,58 +166,25 @@
         }
     }
 
-    .donations_card {
-        width: 310px;
-        height: 83px;
-        margin-bottom: 20px;
-        padding: 10px;
+    .donations {
+        flex-wrap: nowrap;
+        overflow: auto;
 
-        .card_icon {
-            width: 40px;
-            height: 40px;
-            margin-right: 10px;
-
-            span {
-                display: inline-block;
-                width: 16px;
-                height: 18px;
-            }
-
-            .card_icon_person {
-                background-size: cover;
-            }
-
-            .card_icon_heart {
-                width: 21px;
-                height: 18px;
-                background-size: cover;
-            }
-
-            .card_icon_building {
-                width: 14px;
-                height: 18px;
-                background-size: cover;
-            }
+        .donations_card:first-child {
+            margin-left: 9px;
         }
     }
 
-    .card_info {
-        width: calc(100% - 50px);
-
-        div {
-            position: relative;
-
-            span {
-                position: absolute;
-                right: 0;
-                top: 29px;
-            }
-        }
+    .donations_card {
+        min-width: 270px;
+        margin-right: 9px;
+        margin-bottom: 20px;
     }
 }
 
 @media (min-width: 320px) and (max-width: 768px) {
     .wrapper {
+        width: var(--mobile-width);
         margin-bottom: 60px;
     }
 
@@ -243,42 +203,11 @@
     }
 
     .donations {
-
-        div:nth-child(n + 3) {
-            margin-bottom: 10px;
-        }
+        flex-direction: column;
+        align-items: center;
     }
 
     .donations_card {
-        width: 49%;
+        margin-bottom: 10px;
     }
-}
-
-@media (max-width: 732px) {
-    .donations_card {
-        width: 100%;
-    }
-}
-
-@media (max-width: 384px) {
-        .donations_card {
-            flex-direction: column;
-            height: 148px;
-            margin: 0 0 10px;
-            width: 100%;
-        }
-        .card_info {
-            width: 100%;
-
-            div {
-                position: relative;
-                justify-content: center;
-
-                span {
-                    position: absolute;
-                    right: 0;
-                    top: 28px;
-                }
-            }
-        }
 }

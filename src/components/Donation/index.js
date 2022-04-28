@@ -8,9 +8,7 @@ const Card = ({ item }) => {
             target = { '_blank' }
             rel = 'noreferrer'
             className = { Styles.donations_card }>
-            <div className = { Styles.card_icon }>
-                <span className = { item.class } />
-            </div>
+            <div className = { `${Styles.card_icon} ${item.class}` } />
             <div className = { Styles.card_info }>
                 <div>
                     <h4>{ item.title }</h4>
@@ -32,17 +30,17 @@ const donations = [
     },
     {
         id:    2,
-        title: 'The Come Back Alive Fund',
-        descr: 'by savelife.in.ua',
-        class: Styles.card_icon_heart,
-        link:  'https://savelife.in.ua/donate/',
-    },
-    {
-        id:    3,
         title: 'Nova Ukraine',
         descr: 'by Nova Ukraine',
         class: Styles.card_icon_building,
         link:  'https://novaukraine.org/donate/',
+    },
+    {
+        id:    3,
+        title: 'The Come Back Alive Fund',
+        descr: 'by savelife.in.ua',
+        class: Styles.card_icon_heart,
+        link:  'https://savelife.in.ua/donate/',
     },
     {
         id:    4,
@@ -58,10 +56,9 @@ const Donation = () => {
         <section id = { 'donate' } className = { Styles.wrapper }>
             <div className = { Styles.pre_title }>
                 <span>{ 'While you’re here,' }</span>
-                <span />
             </div>
             <div className = { Styles.title }>
-                <h3>{ 'Consider making a donation today:' }</h3>
+                <h3>{ 'Consider making a donation today' }</h3>
                 <div>
                     <span />
                     <span>{ 'Trusted sources guarantee' }</span>

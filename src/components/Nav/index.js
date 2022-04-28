@@ -14,6 +14,9 @@ const Nav = () => {
                 <li>
                     <a href = { '#donate' }>{ 'Donate' }</a>
                 </li>
+                <li>
+                    <a href = { '#contact' }>{ 'Contact' }</a>
+                </li>
             </ul>
         </nav>
     );
