@@ -110,7 +110,7 @@ const OurWorks = () => {
                                     <div className = { Styles.card_info }>
                                         <div className = { Styles.info_title }>
                                             <h3>{ item.title }</h3>
-                                            <div>{ `${item.project} project` }</div>
+                                            <div>{ item.project }</div>
                                             <span>{ item.type }</span>
                                         </div>
                                         <div className = { Styles.info_text }>
