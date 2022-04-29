@@ -185,7 +185,7 @@
 @media (min-width: 320px) and (max-width: 768px) {
     .wrapper {
         width: var(--mobile-width);
-        margin-bottom: 60px;
+        margin-bottom: 50px;
     }
 
     .title {
@@ -203,11 +203,17 @@
     }
 
     .donations {
-        flex-direction: column;
-        align-items: center;
+        flex-wrap: nowrap;
+        overflow: auto;
+
+        .donations_card:first-child {
+            margin-left: 9px;
+        }
     }
 
     .donations_card {
-        margin-bottom: 10px;
+        min-width: 270px;
+        margin-right: 9px;
+        margin-bottom: 20px;
     }
 }

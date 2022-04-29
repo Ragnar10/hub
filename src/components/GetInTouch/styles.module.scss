@@ -121,8 +121,9 @@ button.form_btn {
         margin-bottom: 90px;
 
         & > div {
+            flex-direction: column;
             width: var(--tablet-width);
-            padding: 50px 30px 25px;
+            padding: 50px;
         }
     }
 
@@ -130,8 +131,12 @@ button.form_btn {
         margin: 20px 0 10px;
     }
 
+    .form_item {
+        width: 100%;
+    }
+
     .form_item:first-child {
-        padding-right: 20px;
+        padding-bottom: 20px;
     }
 
     .title {
@@ -141,29 +146,31 @@ button.form_btn {
 
     .form {
         & > div {
-            & input {
-                width: calc(100% - 5px);
-            }
+            margin-bottom: 20px;
 
             & > input:first-child {
-                margin-right: 10px;
+                margin-right: 20px;
             }
         }
     }
 
-    .form_field {
-        padding: 10px 7px;
+    textarea.form_field {
+        margin-bottom: 30px;
+    }
+
+    button.form_btn {
+        width: 240px;
     }
 }
 
 @media (min-width: 320px) and (max-width: 768px) {
     .wrapper {
-        margin-bottom: 60px;
+        margin-bottom: 70px;
 
         & > div {
             flex-direction: column;
             width: var(--mobile-width);
-            padding: 20px 10px;
+            padding: 20px;
         }
     }
 
@@ -181,13 +188,12 @@ button.form_btn {
     }
 
     .title {
-        font-size: 36px;
+        font-size: 32px;
         line-height: 42px;
     }
 
     .form_field {
         margin-bottom: 10px;
-        padding: 10px 7px;
     }
 
     .form {
@@ -196,7 +202,7 @@ button.form_btn {
             margin-bottom: 0;
 
             & input {
-                width: calc(100% - 20px);
+                width: calc(100% - 30px);
             }
 
             & > input:first-child {
@@ -210,6 +216,7 @@ button.form_btn {
     }
 
     button.form_btn {
+        width: 100%;
         margin: 0 auto;
     }
 }
