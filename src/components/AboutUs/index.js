@@ -30,7 +30,7 @@ const team = [
         id: 4, name: 'Dmitry Bagow', position: 'CTO', descr: 'Technical planning and execution', class: Styles.card_avatar_db,
     },
     {
-        id: 5, name: 'Andrey Paios', position: 'Head PM', descr: 'Task management', class: Styles.card_avatar_ap,
+        id: 5, name: 'Andrey Paios', position: 'Head of PM', descr: 'Task management', class: Styles.card_avatar_ap,
     },
     {
         id: 6, name: 'Roman Zakharov', position: 'Advisor', descr: 'Guidance on government work', class: Styles.card_avatar_r,
