@@ -253,6 +253,10 @@
         & > div button[type="button"] {
             display: none !important;
         }
+
+        & ul {
+            position: absolute;
+        }
     }
 
     .carousel_card {
@@ -262,7 +266,7 @@
     .card_img {
         width: 100%;
         height: fit-content;
-        margin-bottom: 20px;
+        margin-bottom: 60px;
     }
 
     .card_info {

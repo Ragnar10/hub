@@ -65,19 +65,22 @@ const images = [
     },
 ];
 
-const settings = {
-    dots:           true,
-    fade:           true,
-    infinite:       true,
-    speed:          500,
-    slidesToShow:   1,
-    slidesToScroll: 1,
-};
-
 const OurWorks = () => {
     const { width } = getComputedStyle(document.body);
     const currentWidth = parseFloat(width);
     const height = (currentWidth - 40) * 0.647;
+
+    const settings = {
+        dots:           true,
+        fade:           true,
+        infinite:       true,
+        speed:          500,
+        slidesToShow:   1,
+        slidesToScroll: 1,
+        appendDots:     (dots) => (
+            <ul style = { currentWidth < 768 ? { top: height + 10 } : null }> { dots } </ul>
+        ),
+    };
 
     return (
         <section id = { 'projects' } className = { Styles.wrapper }>

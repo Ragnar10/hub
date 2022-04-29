@@ -7,14 +7,17 @@ import emailjs from 'emailjs-com';
 import { Button, Alert, Snackbar } from '@mui/material';
 // Styles
 import Styles from './styles.module.scss';
+// Components
+import Spinner from '../Spinner';
 
 const GetInTouch = () => {
+    const [loading, setLoading] = useState(false);
     const [open, setOpen] = useState(false);
     const [answer, setAnswer] = useState({});
 
     const alertSettings = {
-        vertical:   'bottom',
-        horizontal: 'right',
+        vertical:   'top',
+        horizontal: 'center',
     };
 
     // const { register, handleSubmit, reset } = useForm({
@@ -28,6 +31,7 @@ const GetInTouch = () => {
 
     const submitForm = (event) => {
         event.preventDefault();
+        setLoading(true);
         emailjs
             .sendForm(
                 process.env.REACT_APP_SERVICE_ID,
@@ -40,6 +44,7 @@ const GetInTouch = () => {
                     setAnswer({ status: result.status, text: 'Message Sent, We will get back to you shortly' });
                     setOpen(true);
                     event.target.reset();
+                    setLoading(false);
                 }
 
                 return result.status;
@@ -49,6 +54,7 @@ const GetInTouch = () => {
                     setAnswer({ status: error.status, text: 'An error occurred, Please try again' });
                     setOpen(true);
                     event.target.reset();
+                    setLoading(false);
                 }
             });
     };
@@ -79,40 +85,46 @@ const GetInTouch = () => {
                             <input
                                 name = { 'name' }
                                 placeholder = { 'Your name' }
+                                disabled = { loading }
                                 required
                                 className = { Styles.form_field } />
                             <input
                                 name = { 'email' }
                                 placeholder = { 'Your email' }
                                 pattern = '[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$'
+                                disabled = { loading }
                                 required
                                 className = { Styles.form_field } />
                         </div>
                         <textarea
                             name = { 'message' }
                             placeholder = { 'Your message' }
+                            disabled = { loading }
                             required
                             className = { Styles.form_field } />
                         <Button
                             type = { 'submit' }
+                            disabled = { loading }
                             variant = { 'contained' }
                             className = { Styles.form_btn }>
-                            { 'Send' }
+                            { loading ? <Spinner /> : 'Send' }
                         </Button>
                     </form>
                 </div>
+                <Snackbar
+                    anchorOrigin = { alertSettings }
+                    open = { open }
+                    autoHideDuration = { 5000 }
+                    onClose = { handleClose }>
+                    <Alert
+                        onClose = { handleClose }
+                        severity = { answer.status === 200 ? 'success' : 'error' }
+                        variant = { 'filled' }
+                        sx = { { width: '100%' } }>
+                        { answer.text }
+                    </Alert>
+                </Snackbar>
             </div>
-            <Snackbar
-                anchorOrigin = { alertSettings }
-                open = { open }
-                autoHideDuration = { 5000 }
-                onClose = { handleClose }>
-                <Alert
-                    onClose = { handleClose } severity = { answer.status === 200 ? 'success' : 'error' }
-                    sx = { { width: '100%' } }>
-                    { answer.text }
-                </Alert>
-            </Snackbar>
         </section>
     );
 };
