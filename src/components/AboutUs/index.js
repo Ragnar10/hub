@@ -18,19 +18,19 @@ const Card = ({ item }) => {
 
 const team = [
     {
-        id: 1, name: 'Ivan Kosyuk', position: 'CEO', descr: 'Development of the vision and architecture of the organization', class: Styles.card_avatar_ik,
+        id: 1, name: 'Ivan Kosyuk', position: 'CEO', descr: 'Founder and architect UAIT HUB', class: Styles.card_avatar_ik,
     },
     {
-        id: 2, name: 'Pavlo Parkhomenko', position: 'President', descr: 'Client communication and partnership development', class: Styles.card_avatar_pp,
+        id: 2, name: 'Pavlo Parkhomenko', position: 'President', descr: 'Client Communication and Partnerships', class: Styles.card_avatar_pp,
     },
     {
-        id: 3, name: 'Oleksandr Cheberiak', position: 'Chief R&D', descr: 'Problem analysis and development of new solutions', class: Styles.card_avatar_oc,
+        id: 3, name: 'Oleksandr Cheberiak', position: 'Chief R&D', descr: 'Analysis and development of new solutions', class: Styles.card_avatar_oc,
     },
     {
         id: 4, name: 'Dmitry Bagow', position: 'CTO', descr: 'Technical planning and execution', class: Styles.card_avatar_db,
     },
     {
-        id: 5, name: 'Andrey Paios', position: 'Head of PM', descr: 'Task management', class: Styles.card_avatar_ap,
+        id: 5, name: 'Andrey Paios', position: 'Head of PM', descr: 'Project management', class: Styles.card_avatar_ap,
     },
     {
         id: 6, name: 'Roman Zakharov', position: 'Advisor', descr: 'Guidance on government work', class: Styles.card_avatar_r,
@@ -46,10 +46,10 @@ const AboutUs = () => {
             <h2 className = { Styles.title }>{ 'Who we are' }</h2>
             <div className = { Styles.descr }>
                 <p>
-                    { 'Our community is engaged in volunteer work in different areas all around Ukraine. Each of our teammates has gained tons of valuable IT experience throughout the years of working in different companies, both small start-ups and big corporations. They have now faced a job loss due to the war and are looking for your projects to put into action' }
+                    { 'We are a community committed to providing high-quality services for our clients while supporting Ukrainian engineers and developers. Our team members are highly-experienced IT professionals with a successful track record of working with startups and large global companies' }
                 </p>
                 <p>
-                    { 'We can both continue contributing to volunteer work in Ukraine and financially support those in need by working on your projects and delivering products. You are guaranteed to receive a high-quality result in a short period of time' }
+                    { 'At the moment, they are facing high unemployment due to the ongoing war. They are all ready, willing, and able to get back to work. Please feel free to reach out to us with any questions or comments' }
                 </p>
             </div>
             <div className = { Styles.team }>

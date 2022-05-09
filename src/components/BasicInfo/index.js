@@ -13,11 +13,11 @@ const BasicInfo = () => {
                         <span>{ 'Emergency opportunity – get in touch, hire today' }</span>
                     </div>
                     <h1 className = { Styles.info_title }>
-                        { 'Ukrainian developers are open for work' }
+                        { 'Ukrainian Developers are Open for Work' }
                     </h1>
                     <p className = { Styles.info_descr }>
                         <span>{ 'Over 1,200 experts in machine learning, cybersecurity' }</span>
-                        <span>{ 'web and app development at your service' }</span>
+                        <span>{ 'web, and app development are ready to work' }</span>
                     </p>
                     <Button
                         href = { '#contact' }

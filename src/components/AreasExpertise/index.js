@@ -15,10 +15,10 @@ const Card = ({ item }) => {
 
 const expertise = [
     {
-        id: 1, title: 'Web', descr: ['Simple web sites', 'Corporate web sites and company intranets', 'Custom solutions: portals, games, automatization of management'], class: Styles.card_icon_web,
+        id: 1, title: 'Web', descr: ['Website development', 'Corporate websites and company intranets', 'Custom solutions: portals, games, automatization of management'], class: Styles.card_icon_web,
     },
     {
-        id: 2, title: 'Apps', descr: ['Native android apps', 'Native iOS apps', 'Unity cross platform apps'], class: Styles.card_icon_apps,
+        id: 2, title: 'Apps', descr: ['Native android apps', 'Native iOS apps', 'Unity cross-platform apps'], class: Styles.card_icon_apps,
     },
     {
         id: 3, title: 'DeFi', descr: ['Landings', 'Games', 'Tokens', 'Smart contracts'], class: Styles.card_icon_defi,
@@ -36,9 +36,9 @@ const AreasExpertise = () => {
         <section className = { Styles.wrapper }>
             <h2 className = { Styles.title }>{ 'Areas of expertise' }</h2>
             <div className = { Styles.descr }>
-                <p>{ 'There is nothing a volunteer can’t do, find, arrange or deliver with a deadline “expired yesterday” in a high-paced environment with working conditions changing every day and every minute' }</p>
-                <p>{ 'This is the value we can provide — a quickly released MVP that can be transformed and modified as we go, aiming to achieve your objectives and ambitions. Depending on the flow of the project and the workload we can move team members around in a moment to offer you the best solutions quickly' }</p>
-                <p>{ 'Being a community of more than 1,200 people willing to make the world a better place, we are ready to offer you a range of services to help your business grow' }</p>
+                <p>{ 'We act as project managers to bring you the best talent, manage end-to-end solutions and deliver results all within budget and deadlines. The value we provide is a quickly released MVP, that can be tailored to achieve changing objectives' }</p>
+                <p>{ 'Our agility allows us to move team members around to offer the best solutions for your workflow' }</p>
+                <p>{ 'Our community of 1,200 people is willing to make the world a better place. We are ready to offer you a range of services to help your business grow' }</p>
             </div>
             <div className = { Styles.expertise }>
                 {
