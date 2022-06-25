@@ -2,8 +2,7 @@
     display: flex;
     width: 100%;
     height: fit-content;
-    margin-bottom: 105px;
-    background: linear-gradient(to bottom, transparent 0 , transparent 19%, var(--emergency-bgcolor) 19%, var(--emergency-bgcolor) 81%, transparent 81%, transparent 100%);
+    margin-bottom: 150px;
 
     & > div {
         display: flex;
@@ -11,8 +10,8 @@
         height: 100%;
         padding: 99px 70px 45px;
         margin: 0 auto;
-        box-shadow: 0 3px 8px rgba(0, 0, 0, 0.11);
-        border-radius: var(--card-border-radius);
+        border: 1px solid #302BDB;
+        border-radius: 2px;
         background-color: var(--main-bgcolor);
     }
 }
@@ -118,7 +117,7 @@ button.form_btn {
 
 @media (min-width: 768px) and (max-width: 1024px) {
     .wrapper {
-        margin-bottom: 90px;
+        margin-bottom: 150px;
 
         & > div {
             flex-direction: column;
@@ -165,7 +164,6 @@ button.form_btn {
 
 @media (min-width: 320px) and (max-width: 768px) {
     .wrapper {
-        margin-bottom: 70px;
 
         & > div {
             flex-direction: column;
@@ -216,7 +214,6 @@ button.form_btn {
     }
 
     button.form_btn {
-        width: 100%;
         margin: 0 auto;
     }
 }

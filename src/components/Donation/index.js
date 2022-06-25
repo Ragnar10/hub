@@ -8,13 +8,17 @@ const Card = ({ item }) => {
             target = { '_blank' }
             rel = 'noreferrer'
             className = { Styles.donations_card }>
-            <div className = { `${Styles.card_icon} ${item.class}` } />
+            {/* <div className = { `${Styles.card_icon} ${item.class}` } /> */}
             <div className = { Styles.card_info }>
-                <div>
+                <div className = { Styles.info_wrapper }>
                     <h4>{ item.title }</h4>
-                    <span />
+                    <div className = { Styles.divider }></div>
                 </div>
-                <span>{ item.descr }</span>
+                <div>
+                    <span className={Styles.descr}>{ item.descr }</span>
+
+                    <span className={Styles.arrow} />
+                </div>
             </div>
         </a>
     );
@@ -58,7 +62,7 @@ const Donation = () => {
                 <span>{ 'While you’re here,' }</span>
             </div>
             <div className = { Styles.title }>
-                <h3>{ 'Consider making a donation today' }</h3>
+                <h3>{ 'Consider making a donation to Ukrainian people' }</h3>
                 <div>
                     <span />
                     <span>{ 'Trusted sources guarantee' }</span>

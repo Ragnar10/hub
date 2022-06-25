@@ -76,7 +76,7 @@ const GetInTouch = () => {
                         { ' Not sure where to start? ' }
                     </p>
                     <p className = { Styles.info_message }>
-                        { 'Tell us about your product, your timeline, and where you\'re located. We read and reply to every message' }
+                        { 'Tell us about your company, the problem you’re facing, your timeline, and where you’re located. We will contact you and schedule an intro call.' }
                     </p>
                 </div>
                 <div className = { Styles.form_item }>

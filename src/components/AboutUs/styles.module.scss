@@ -3,11 +3,11 @@
     flex-direction: column;
     width: var(--desktop-width);
     height: fit-content;
-    margin: 0 auto 105px;
+    margin: 0 auto 200px;
 }
 
 .title {
-    margin-bottom: 40px;
+    margin-bottom: 70px;
     font-size: var(--title-font-size);
     line-height: 49px;
     font-weight: 500;
@@ -25,6 +25,10 @@
         font-size: var(--primary-font-size);
         line-height: 24px;
         color: var(--primary-color);
+    }
+
+    p:last-child {
+        margin-bottom: 40px;
     }
 }
 
@@ -165,7 +169,7 @@ a.btn_contact {
 @media (min-width: 768px) and (max-width: 1024px) {
     .wrapper {
         width: var(--tablet-width);
-        margin-bottom: 70px;
+        margin-bottom: 150px;
     }
 
     .title {
@@ -186,7 +190,6 @@ a.btn_contact {
 @media (min-width: 320px) and (max-width: 768px) {
     .wrapper {
         width: var(--mobile-width);
-        margin-bottom: 70px;
     }
 
     .title {

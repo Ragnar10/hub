@@ -22,13 +22,18 @@ const SideNav = () => {
                 <ul>
                     <li>
                         <a
-                            href = { '#aboutus' }
-                            onClick = { () => setIsOpen(!isOpen) }>{ 'Who we are' }</a>
+                            href = { '#howwework' }
+                            onClick = { () => setIsOpen(!isOpen) }>{ 'How we work' }</a>
                     </li>
                     <li>
                         <a
                             href = { '#projects' }
-                            onClick = { () => setIsOpen(!isOpen) }>{ 'Projects' }</a>
+                            onClick = { () => setIsOpen(!isOpen) }>{ 'Our projects' }</a>
+                    </li>
+                    <li>
+                        <a
+                            href = { '#aboutus' }
+                            onClick = { () => setIsOpen(!isOpen) }>{ 'Who we are' }</a>
                     </li>
                     <li>
                         <a
@@ -41,14 +46,14 @@ const SideNav = () => {
                             onClick = { () => setIsOpen(!isOpen) }>{ 'Contact' }</a>
                     </li>
                 </ul>
-                <div className = { Styles.auth }>
+                {/* <div className = { Styles.auth }>
                     <Button
                         variant = { 'text' }
                         className = { Styles.auth_login_btn }>{ 'Login' }</Button>
                     <Button
                         variant = { 'contained' }
                         className = { Styles.auth_reg_btn }>{ 'Register' }</Button>
-                </div>
+                </div> */}
                 <div className = { Styles.footer_contacts }>
                     <div className = { Styles.contacts_phone }>
                         <div>

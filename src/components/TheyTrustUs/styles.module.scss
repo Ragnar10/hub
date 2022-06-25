@@ -1,0 +1,151 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    width: var(--desktop-width);
+    height: fit-content;
+    margin: 0 auto 200px;
+}
+
+.title {
+    margin-bottom: 70px;
+    font-size: var(--title-font-size);
+    line-height: 49px;
+    font-weight: 500;
+    color: var(--title-color);
+}
+
+.grid {
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    a {
+        width: 100%;
+        flex: 0 0 calc(22% - 40px);
+        filter: grayscale(100%);
+        transition: filter 0.5s ease-out 0s;
+    }
+
+    a:hover {
+        filter: grayscale(0);
+        transition: filter 0.5s ease-out 0s;
+    }
+
+    .company {
+        width: 100%;
+        // max-width: 100px;
+        height: 100%;
+
+        &.wzmh_logo {
+            background: url('../../theme/assets/icons/wzmh_logo.svg') no-repeat center;
+        }
+
+        &.eva_logo {
+            background: url('../../theme/assets/icons/eva_logo.svg') no-repeat center;
+        }
+
+        &.prox_learn_logo {
+            background: url('../../theme/assets/icons/prox_learn_logo.svg') no-repeat center;
+        }
+
+        &.min_defence_logo {
+            background: url('../../theme/assets/icons/min_defence_logo.svg') no-repeat center;
+        }
+
+        &.farm_plate_logo {
+            background: url('../../theme/assets/icons/farm_plate_logo.svg') no-repeat center;
+        }
+
+        &.min_digital_logo {
+            background: url('../../theme/assets/icons/min_digital_logo.svg') no-repeat center;
+        }
+
+        &.sparkbird_logo {
+            max-width: 170px;
+            background: url('../../theme/assets/icons/sparkbird_logo.svg') no-repeat center;
+        }
+
+        &.gp_now_logo {
+            background: url('../../theme/assets/icons/gp_now_logo.svg') no-repeat center;
+        }
+
+        &.peer_social_logo {
+            background: url('../../theme/assets/icons/peer_social_logo.svg') no-repeat center;
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .wrapper {
+        width: var(--small-desktop-width);
+    }
+
+    .descr {
+        width: 90%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .wrapper {
+        width: var(--tablet-width);
+        margin-bottom: 150px;
+    }
+
+    .title {
+        margin-bottom: 20px;
+        font-size: 36px;
+        line-height: 37px;
+    }
+
+    .descr {
+        width: 100%;
+    }
+
+    a.btn_contact {
+        margin: 30px auto 0;
+    }
+}
+
+@media (max-width: 780px) {
+    .grid {
+        a {
+            flex-basis: calc(24% - 40px);
+            filter: grayscale(0);
+        }
+    }
+}
+
+@media (max-width: 780px) {
+    .wrapper {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .company {
+        background-size: 80px 80px !important;
+    }
+
+    .sparkbird_logo {
+        background-size: 102px 90px !important;
+    }
+}
+
+@media (max-width: 600px) {
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        
+        a {
+            flex-basis: calc(25% - 40px);
+        }
+    }
+
+    .company {
+        background-size: 60px 60px !important;
+    }
+
+    .sparkbird_logo {
+        background-size: 92px 80px !important;
+    }
+}

@@ -19,14 +19,14 @@ const Header = () => {
             </div>
             <div className = { Styles.header_interaction }>
                 <Nav />
-                <div className = { Styles.interaction_auth }>
+                {/* <div className = { Styles.interaction_auth }>
                     <Button
                         variant = { 'text' }
                         className = { Styles.auth_login_btn }>{ 'Login' }</Button>
                     <Button
                         variant = { 'contained' }
                         className = { Styles.auth_reg_btn }>{ 'Register' }</Button>
-                </div>
+                </div> */}
             </div>
         </header>
     );

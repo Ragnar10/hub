@@ -9,12 +9,25 @@
             a {
                 font-size: 18px;
                 line-height: 22px;
+                font-weight: 500;
                 color: var(--title-color)
             }
         }
 
         li:last-child {
             margin-right: 0;
+
+            a {
+                text-align: center;
+                border: 1px solid #302BDB;
+                border-radius: 4px;
+                padding: 14px 47px;
+                font-size: 16px;
+                line-height: 20px;
+                font-weight: 600;
+                color: #302BDB;
+            }
+
         }
     }
 }
