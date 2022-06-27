@@ -91,7 +91,7 @@ const OurWorks = () => {
 
     return (
         <section id = { 'projects' } className = { Styles.wrapper }>
-            <h2 className = { Styles.title }>{ 'Our work' }</h2>
+            <h2 className = { Styles.title }>{ 'Our projects' }</h2>
             <div className = { Styles.carousel_wrapper }>
                 <Slider { ...settings }>
                     {

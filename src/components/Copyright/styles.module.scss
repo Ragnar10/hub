@@ -4,13 +4,13 @@
     justify-content: center;
     width: 100%;
     height: 46px;
-    background-color: var(--copy-bgcolor);
+    background-color: var(--title-color);
 }
 
 .info {
     display: flex;
     font-size: var(--primary-font-size);
-    color: var(--primary-color);
+    color: var(--secondary-color);
     align-items: center;
 }
 
