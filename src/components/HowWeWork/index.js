@@ -1,16 +1,29 @@
 import { Button } from '@mui/material';
+import { useState } from 'react';
 // Styles
 import Styles from "./styles.module.scss";
 
 const Card = ({ item }) => {
+
+    const [details, setDetails] = useState(true);
+
+
   return (
-    <div className={ Styles.card_wrapper }>
+    <div className={ `${Styles.card_wrapper} ${!details ? Styles.card_wrapper_open :  Styles.card_wrapper_closed}` }>
         <div>
-            <h3>{item.title}</h3>
-            <div className = { Styles.divider }></div>
-            <div className={Styles.description}>{item.descr}</div>
+            <div className={ Styles.mob_wrapper }>
+              <h3>{item.title}</h3>
+              <div
+                  className={Styles.more_details}
+                  onClick={() => setDetails(!details)}
+                >
+                </div>
+            </div>
+                <div className={ `${Styles.divider} ${!details ? Styles.display : null}`}></div>
+                <div className={ `${Styles.description} ${!details ? Styles.display : null}` }>{ item.descr }</div>
         </div>
-        <div>
+
+        <div className={`${Styles.content_wrapper} ${!details ? Styles.display : null}`}>
             <div className={Styles.timeline}>{ item.timeline }</div>
             
             <div className={Styles.d_flex}>

@@ -42,13 +42,24 @@
     }
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 860px) and (max-width: 1024px) {
     .nav {
-        display: none;
+        ul {
+            li {
+                margin-right: 15px;
+            }
+
+            li:last-child {
+    
+                a {
+                    padding: 14px 32px;
+                }
+            }
+        }
     }
 }
 
-@media (min-width: 320px) and (max-width: 768px) {
+@media (min-width: 320px) and (max-width: 860px) {
     .nav {
         display: none;
     }

@@ -153,6 +153,7 @@
     }
 
     .cards_wrap {
-        flex-direction: column !important;
+        overflow-x: scroll;
+        width: 100%;
     }
 }

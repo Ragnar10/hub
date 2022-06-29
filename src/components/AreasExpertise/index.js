@@ -1,16 +1,28 @@
 // Styles
+import { useState } from 'react';
 import Styles from './styles.module.scss';
 
 const Card = (props) => {
     const item = props.item;
     const index = props.index;
+
+    const [details, setDetails] = useState(true);
+
     return (
         <div className ={Styles.card_wrapper}>
             <div className = { (index <= 2) ? Styles.expertise_card_top : Styles.expertise_card_bottom }>
                 <div className = {Styles.card_content}>
-                    <h4>{ item.title }</h4>
-                    <div className = { Styles.divider }></div>
-                    <ul>
+                    <div className={ Styles.mob_wrapper }>
+                        <h4>{ item.title }</h4>
+                        <div
+                            className={Styles.more_details}
+                            onClick={() => setDetails(!details)}
+                        ></div>
+                    </div>
+                    
+                    <div className = {`${Styles.divider} ${!details ? Styles.display : null}` }></div>
+
+                    <ul className = { !details ? Styles.display : null }>
                         { item.descr.map((listItem, idx) => <li key = { idx }>{ listItem }</li>) }
                     </ul>
                 </div>
