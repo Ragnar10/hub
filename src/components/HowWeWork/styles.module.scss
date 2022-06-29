@@ -49,6 +49,12 @@
             font-weight: 600;
         }
 
+        .more_details {
+            background: url('../../theme/assets/icons/chevron-down.svg') no-repeat;
+            background-size: contain;
+            min-width: 30px;
+        }
+
         .divider {
             width: 80px;
             height: 3px;
@@ -181,6 +187,65 @@
     .packages {
         flex-direction: column;
         align-items: center;
+    }
+
+    .mob_wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .card_wrapper {
+        height: 100% !important;
+        border: none !important;
+    }
+
+    .card_wrapper_open {
+        width: 570px;
+        height: 511px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border: 1px solid #302BDB !important;
+        padding: 30px 20px !important;
+    }
+
+    .card_wrapper_closed {
+        width: 325px !important;
+        height: 80px !important;
+        justify-content: center !important;
+        border-left: 2px solid #302BDB !important;
+        padding: 0px 20px !important;
+
+        .more_details {
+            background: url('../../theme/assets/icons/chevron-down.svg') no-repeat;
+            background-size: contain;
+            min-width: 30px;
+        }
+    }
+
+    .divider {
+        display: none;
+    }
+
+    .divider.display {
+        display: block !important;
+    }
+
+    .description {
+        display: none;
+    }
+
+    .description.display {
+        display: block !important;
+
+    }
+
+    .content_wrapper {
+        display: none;
+    }
+
+    .content_wrapper.display {
+        display: block !important;
     }
 }
 

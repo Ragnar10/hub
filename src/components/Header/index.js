@@ -11,7 +11,6 @@ import SideNav from '../SideNav';
 const Header = () => {
     return (
         <header className = { Styles.header }>
-            <SideNav />
             <div className = { Styles.header_logo }>
                 <a href = { '/' }>
                     <img src = { logo } alt = { 'logo image' } />
@@ -28,6 +27,9 @@ const Header = () => {
                         className = { Styles.auth_reg_btn }>{ 'Register' }</Button>
                 </div> */}
             </div>
+
+            <SideNav />
+
         </header>
     );
 };

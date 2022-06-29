@@ -219,6 +219,10 @@
         grid-template-columns: repeat(2, 340px);
     }
 
+    .card_content, .expertise_card_top, .expertise_card_bottom {
+        min-height: 100% !important;
+    }
+
     .expertise_card_top, .expertise_card_bottom {
         &:hover {
             top: 0 !important;
@@ -228,9 +232,37 @@
     .background {
         display: none !important;
     }
+
+    .more_details {
+        width: 30px;
+        background: url('../../theme/assets/icons/chevron-down.svg') no-repeat;
+        background-size: contain;
+    }
+
+    .mob_wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
 }
 
 @media (max-width: 768px) {
+
+    .divider {
+        display: none;
+    }
+
+    .divider.display {
+        display: block !important;
+    }
+
+    .card_content ul {
+        display: none;
+    }
+
+    .card_content ul.display {
+        display: block;
+    }
+
     .wrapper {
         width: var(--mobile-width);
     }
@@ -245,22 +277,28 @@
         font-size: 14px;
     }
     .expertise {
-        display: flex !important;
-        overflow: auto;
-        padding: 40px 0 20px;
-
-        & > div:first-child {
-            margin-left: 9px;
-        }
-        .card_wrapper {
-            min-width: 320px;
-        }
+        grid-template-columns: repeat(2, 310px);
+        justify-content: center;
+        gap: 20px;
     }
 
     .expertise_card {
         min-width: 210px;
         margin-right: 9px;
         margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 700px) {
+    .expertise {
+        display: flex !important;
+        flex-direction: column;
+        padding: 40px 0 20px;
+        align-items: center;
+
+        .card_wrapper,.expertise_card  {
+            min-width: 335px;
+        }
     }
 }
 
