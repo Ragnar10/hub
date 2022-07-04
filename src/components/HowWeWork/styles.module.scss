@@ -15,18 +15,20 @@
 }
 
 .descr {
-    width: 75%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
     margin-bottom: 30px;
 
     p {
-        margin-bottom: 10px;
+        width: 50%;
         font-size: var(--primary-font-size);
         line-height: 24px;
         color: var(--primary-color);
     }
 
     p:last-child {
-        margin-bottom: 0;
+        margin-left: 40px;
     }
 }
 
@@ -119,10 +121,6 @@
         width: var(--small-desktop-width);
         margin-bottom: 130px;
     }
-    
-    .descr {
-        width: 90%;
-    }
 }
 
 @media (max-width: 1275px) {
@@ -182,6 +180,15 @@
     .wrapper {
         width: 100%;
         padding: 0 20px;
+    }
+    .descr {
+        flex-direction: column;
+
+        p {
+            width: 100%;
+            margin-left: 0 !important;
+            margin-bottom: 10px;
+        }
     }
 
     .packages {

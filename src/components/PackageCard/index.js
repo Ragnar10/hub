@@ -16,7 +16,7 @@ const cards = [
       "analysis of the technologies used and potential risks",
     ],
     timeline: "1.5 week",
-    price: "$2,700",
+    price: "$2,250",
     forWhom: "for those who understand what solution they want to receive",
     class: Styles.first_card,
   },
@@ -32,9 +32,9 @@ const cards = [
       "your idea, packaged into a full product concept",
     ],
     timeline: "3 weeks",
-    price: "$5,400",
+    price: "$4,500",
     forWhom:
-      "for those who have only a conceptual understanding of the solution",
+      "for those who have the vision, but don't know the specifics",
     class: Styles.second_card,
   },
 ];
