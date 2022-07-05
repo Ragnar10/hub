@@ -23,7 +23,7 @@ const SideNav = () => {
                     <li>
                         <a
                             href = { '#howwework' }
-                            onClick = { () => setIsOpen(!isOpen) }>{ 'How we work' }</a>
+                            onClick = { () => setIsOpen(!isOpen) }>{ 'What to expect' }</a>
                     </li>
                     <li>
                         <a
