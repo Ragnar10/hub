@@ -17,7 +17,7 @@ const InitialProduct = () => {
               }
             </div>
             <span className={Styles.time}>{"4-12 weeks"}</span>
-            <span className={Styles.price}>{"$20,000-80,000"}</span>
+            <span className={Styles.price}>{"$5,000-15,000"}</span>
           </div>
 
           <div className={Styles.card_block}>
