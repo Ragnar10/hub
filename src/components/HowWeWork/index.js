@@ -48,7 +48,7 @@ const cards = [
     title: "In-depth technical problem analysis",
     descr: "We analyze the client's request, make an overview of the available and relevant technological approaches, and create a product development plan with the timeline and financial estimations.",
     timeline: '1.5 week',
-    price: '$2,700',
+    price: '$2,250',
     forWhom: 'for those who understand what solution they want to receive',
   },
   {
@@ -56,18 +56,18 @@ const cards = [
     title: "In-depth product & technical problem analysis",
     descr: "We analyze the “pain” our client has, make an overview of the market this product will exist in, suggest what should be added or changed to make the product more competitive, and offer alternative non-technological solutions for the client’s problem",
     timeline: '3 weeks',
-    price: '$5,400',
-    forWhom: 'for those who understand what solution they want to receive',
+    price: '$4,500',
+    forWhom: `for those who have the vision, but don't know the specifics`,
   },
 ];
 
 const HowWeWork = () => {
   return (
     <section id = { 'howwework' } className={Styles.wrapper}>
-      <h2 className={Styles.title}>{"How we work"}</h2>
+      <h2 className={Styles.title}>{"What to expect"}</h2>
       <div className={Styles.descr}>
-        <p>{`Each project we work on starts with a thorough analysis of our client's problem. `}</p>
-        <p>{"This way, we can offer the most efficient solutions."}</p>
+        <p>{`This is our fundamental approach to projects. However, we are flexible and ready to consider other procedures to satisfy any specific need.`}</p>
+        <p>{`We suggest to always start with a business analysis phase to prepare roadmap, SOW, FBL, etc`}</p>
       </div>
       <div className={Styles.packages}>
       {
