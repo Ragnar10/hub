@@ -57,7 +57,7 @@ const cards = [
     descr: "We analyze the “pain” our client has, make an overview of the market this product will exist in, suggest what should be added or changed to make the product more competitive, and offer alternative non-technological solutions for the client’s problem",
     timeline: '3 weeks',
     price: '$4,500',
-    forWhom: 'for those who understand what solution they want to receive',
+    forWhom: `for those who have the vision, but don't know the specifics`,
   },
 ];
 
