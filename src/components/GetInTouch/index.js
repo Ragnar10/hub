@@ -89,6 +89,7 @@ const GetInTouch = () => {
                                 required
                                 className = { Styles.form_field } />
                             <input
+                                type = 'email'
                                 name = { 'email' }
                                 placeholder = { 'Your email' }
                                 pattern = '[a-Z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$'
